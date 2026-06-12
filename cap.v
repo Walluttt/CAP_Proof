@@ -585,8 +585,53 @@ Section Construction_Execution_Partitionnee.
     }
   Admitted.
 
+  Lemma pending_call_false_before_T2 : pending_call (build_config T2) n1 = false.
+Proof.
+  (* La preuve exacte ici nécessitera de faire un 'unfold build_config' 
+     et de montrer qu'entre T1 (où l'appel a été fait) et T2, 
+     le noeud n1 a bien reçu un événement 'ret' qui a remis 
+     son pending_call à false.
+  *)
+  Admitted.
 
-  
+  Lemma pending_call_false_before_T3 : pending_call (build_config T3) n2 = false.
+Proof. Admitted.
+
+Lemma pending_call_false_before_T4 : pending_call (build_config T4) n2 = false.
+  Proof. Admitted.
+
+  Lemma my_exec_init : build_config 0 = config_initiale A.
+  Proof.
+    simpl. 
+    reflexivity. 
+  Qed.
+
+  Lemma my_exec_valid_lemma : forall n : nat, 
+  match build_trace n with
+  | Some (t, current_node) => 
+      Valid_Step eq_node_dec eq_msg_dec A (build_config n) current_node t (build_config (S n))
+  | None => 
+      build_config (S n) = build_config n
+  end.
+Proof.
+  Admitted.
+
+
+  Lemma my_exec_reliable_lemma : forall i m src dst,
+  build_trace i = Some (send _ _ m dst, src) ->
+  can_communicate src dst = true -> 
+  is_correct build_trace dst ->
+  exists j, j > i /\ build_trace j = Some (receive _ _ m src, dst).
+Proof.
+  Admitted.
+
+Lemma my_exec_halting_lemma : forall n : nat, 
+  build_trace n = None -> build_trace (S n) = None.
+Proof.
+  Admitted.
+
+
+
   Definition my_partitioned_execution : Execution eq_node_dec eq_msg_dec A.
   Proof.
     refine {|
@@ -674,67 +719,242 @@ Section Construction_Execution_Partitionnee.
           }
           destruct (n =? T2) eqn:HeqT2.
           { 
-            inversion Heqstep_result; subst.
-            (* On force Coq à regarder les définitions de step et states *)
-            simpl in *.
+            (* Déballage global avant d'ouvrir les sous-buts *)
+            inversion Heqstep_result; subst; clear Heqstep_result.
+            unfold apply_call_step in H0.
             
-            (* On utilise le constructeur pour ouvrir les 3 conditions *)
+            (* CORRECTION ICI : on ajoute @ et les types *)
+            destruct (input_step A (states (build_config n) n1) (@call Node Message C R c_read1) eq_refl) as [next_q Hstep].
+            
+            inversion H0; subst; clear H0.
+            
             econstructor.
-            { 
-              inversion Heqstep_result; subst.
-              unfold apply_call_step in H0.
-              (* On récupère la preuve cachée dans le 'existT' produit par input_step *)
-              destruct (input_step A (states (build_config n) n1) (call Node Message R c_read1) eq_refl) as [next_q Hstep].
-              inversion H0; subst.
-              simpl in *.
-              unfold update_state.
-              (* Destruct le test d'égalité pour forcer Coq à choisir le cas 'eq' *)
+            { (* Goal 1 : Preuve de l'étape de l'algorithme *)
+              simpl. 
+              destruct (eq_node_dec n1 n1); 
+              simpl. 
               destruct (eq_node_dec n1 n1) as [eq | neq].
+              unfold update_state. 
+              destruct (eq_node_dec n1 n1).
+              { exact Hstep. }
+              { congruence. }
+              exfalso. 
+              apply neq. 
+              reflexivity.
+              unfold update_state.
+              destruct (eq_node_dec n1 n1).
               { 
-                (* Dans le cas 'eq', Coq remplace states par next_q automatiquement *)
-                simpl. 
+                (* Ici l'état est correctement mis à jour, on applique la preuve *)
                 exact Hstep. 
               }
-              { (* Ce cas est impossible, congruence le résoudra *)
-                congruence. 
+              { 
+                (* Coq génère à nouveau le cas impossible, on le tue de la même façon *)
+                exfalso. 
+                apply n0. 
+                reflexivity. 
               }
             }
-            
             { (* Goal 2 : Égalité des états *)
-              unfold states in *.
-  simpl in *.
-  
-  (* Si tu as une égalité, utilise la *)
-  rewrite Heqstep_result. 
-  
-  (* Puis réduis le résultat de l'application *)
-  simpl.
-  
-  (* Et là, reflexivity devrait passer *)
-  reflexivity. 
+              (* 1. On nettoie les records {||} qui polluent la vue *)
+              simpl. 
+              
+              (* 2. On prouve que lire l'état mis à jour de n1 donne bien next_q *)
+              assert (H_val : update_state eq_node_dec (states (build_config n)) n1 next_q n1 = next_q).
+              { 
+                unfold update_state. 
+                destruct (eq_node_dec n1 n1) as [ | neq].
+                - reflexivity.
+                - exfalso. apply neq. reflexivity.
+              }
+              
+              (* 3. On remplace ce gros bloc par next_q dans le Goal principal *)
+              rewrite H_val.
+              
+              (* 4. Maintenant les deux côtés sont rigoureusement identiques *)
+              reflexivity. 
             }
-            { reflexivity. }
-            { repeat split; try reflexivity; apply pending_call_false_before_T1; lia. }
+            { (* Goal 3 : Gestion du réseau et du call *)
+              (* On nettoie les cas évidents (le réseau qui ne change pas, etc.) *)
+              repeat split; try reflexivity. 
+              
+              (* 1. On dit à Coq qu'on est exactement au temps T2 *)
+              apply Nat.eqb_eq in HeqT2.
+              subst n.
+              apply pending_call_false_before_T2.
+              
+            }
           }
           destruct (n =? T3) eqn:HeqT3.
           { 
-            inversion Heqstep_result; subst.
-            apply valid_apply_call_step.
-          }
-          
-          destruct (n =? T4) eqn:HeqT4.
-          { 
-            inversion Heqstep_result; subst.
-            apply valid_apply_call_step.
-          }
-          
-          (* 2. Cas final : system_step *)
-          { 
-            inversion Heqstep_result; subst.
-            (* Ici, tu dois prouver que system_step produit un pas valide *)
-            apply valid_system_step.
+            (* --- CAS T3 --- *)
+            inversion Heqstep_result; subst; clear Heqstep_result.
+            
+            (* On déplie sur H0 *)
+            unfold apply_call_step in H0.
+            
+            (* On destruct sur n2 *)
+            destruct (input_step A (states (build_config n) n2) (@call Node Message C R c_write2) eq_refl) as [next_q Hstep].
+            
+            (* On inverse H0 et on le nettoie *)
+            inversion H0; subst; clear H0.
+            
+            econstructor.
+            { (* Goal 1 : Preuve algorithme *)
+              simpl. 
+              unfold update_state.
+              destruct (eq_node_dec n2 n2) as [ | neq].
+              - exact Hstep.
+              - exfalso; apply neq; reflexivity.
+            }
+            { (* Goal 2 : Égalité des états *)
+              simpl.
+              assert (H_val : update_state eq_node_dec (states (build_config n)) n2 next_q n2 = next_q).
+              { 
+                unfold update_state. destruct (eq_node_dec n2 n2) as [ | neq].
+                - reflexivity.
+                - exfalso. apply neq. reflexivity.
+              }
+              rewrite H_val. reflexivity.
+            }
+            { (* Goal 3 : Call dispo *)
+              repeat split; try reflexivity. 
+              apply Nat.eqb_eq in HeqT3; subst.
+              apply pending_call_false_before_T3.
+            }
           }
 
+
+          destruct (n =? T4) eqn:HeqT4.
+          { 
+            (* --- CAS T4 --- *)
+            inversion Heqstep_result; subst; clear Heqstep_result.
+            
+            (* L'hypothèse s'appelle bien H0 ici ! *)
+            unfold apply_call_step in H0.
+            
+            destruct (input_step A (states (build_config n) n2) (@call Node Message C R c_read2) eq_refl) as [next_q Hstep].
+            
+            inversion H0; subst; clear H0.
+            
+            econstructor.
+            { (* Goal 1 : Preuve algorithme *)
+              simpl. 
+              unfold update_state.
+              destruct (eq_node_dec n2 n2) as [ | neq].
+              - exact Hstep.
+              - exfalso; apply neq; reflexivity.
+            }
+            { (* Goal 2 : Égalité des états *)
+              simpl.
+              assert (H_val : update_state eq_node_dec (states (build_config n)) n2 next_q n2 = next_q).
+              { 
+                unfold update_state. destruct (eq_node_dec n2 n2) as [ | neq].
+                - reflexivity.
+                - exfalso. apply neq. reflexivity.
+              }
+              rewrite H_val. reflexivity.
+            }
+            { (* Goal 3 : Call dispo *)
+              repeat split; try reflexivity. 
+              apply Nat.eqb_eq in HeqT4; subst.
+              apply pending_call_false_before_T4.
+            }
+          }
+          
+          (* --- CAS PAR DÉFAUT (system_step en tâche de fond) --- *)
+          { 
+            (* On nettoie les variables si nécessaire *)
+            inversion Heqstep_result; subst; clear Heqstep_result.
+            
+            (* 1. On ouvre le moteur du réseau dans l'hypothèse H0 *)
+            unfold system_step in H0.
+            
+            (* 2. On regarde qui l'ordonnanceur a décidé de réveiller *)
+            destruct (schedule_node n) as [n_sched | ].
+            {
+              (* Cas Normal : Le noeud n_sched s'est réveillé *)
+              (* On extrait le résultat de son exécution (la fonction node_step) *)
+              destruct (node_step (build_config n) n_sched) as [cfg_next trans_next] eqn:Hnode.
+              
+              (* On aligne nos variables (new_cfg devient cfg_next, etc.) *)
+              inversion H0; subst; clear H0.
+              
+              (* 3. L'INSTANT DE VÉRITÉ *)
+              (* Le but est maintenant de prouver que ce node_step est un Valid_Step. *)
+              (* Cherche le lemme de ton fichier qui fait ce pont ! *)
+              
+              (* Exemple : *)
+              (* apply valid_node_step. *)
+              (* exact Hnode. *)
+              
+              unfold node_step in Hnode.
+              
+              (* Ici, on va devoir destructurer l'action interne (le existT / input_step) *)
+              (* destruct (input_step A ...) as [next_q Hstep]. *)
+              
+              unfold node_step in Hnode.
+              
+              (* On analyse le comportement du noeud : Réception de message ou Action locale *)
+              destruct (apply_receive_step (build_config n) n_sched) as [[cfg_rec trans_rec] | ] eqn:Hrecv.
+              {
+                (* Sous-cas A : Un message a été reçu (apply_receive_step) *)
+                inversion Hnode; subst; clear Hnode.
+                
+                (* La preuve nécessite d'ouvrir apply_receive_step pour exposer le existT *)
+                admit. 
+              }
+              {
+                (* Sous-cas B : Aucune réception, c'est une action interne (apply_local_step) *)
+                destruct (extract_local_step (build_config n) n_sched) as [trans_loc dummy] eqn:Hext.
+                inversion Hnode; subst; clear Hnode.
+                
+                (* La preuve nécessite d'ouvrir apply_local_step pour exposer le existT *)
+                admit.
+              }
+            }
+            {
+              (* Cas Absurde : L'ordonnanceur dort (None), mais on a une trace (Some) *)
+              inversion H0.
+            }
+          }
+
+      + (* Sous-cas 2 : Aucune transition n'a eu lieu (opt_trace = None) *)
+        
+        (* 1. LA LIGNE MAGIQUE : On remplace la fonction par new_cfg dans le but AVANT de la détruire *)
+        rewrite <- Heqstep_result.
+        
+        (* Le but devient proprement 'new_cfg = build_config n' *)
+        simpl.
+
+        (* 2. Maintenant on déroule notre rouleau compresseur sur l'hypothèse *)
+        unfold director_step in Heqstep_result.
+        
+        destruct (n =? T1).
+        { destruct (apply_call_step (build_config n) n1 c_write1) as [cfg_t trans_t]. inversion Heqstep_result. }
+        
+        destruct (n =? T2).
+        { destruct (apply_call_step (build_config n) n1 c_read1) as [cfg_t trans_t]. inversion Heqstep_result. }
+        
+        destruct (n =? T3).
+        { destruct (apply_call_step (build_config n) n2 c_write2) as [cfg_t trans_t]. inversion Heqstep_result. }
+        
+        destruct (n =? T4).
+        { destruct (apply_call_step (build_config n) n2 c_read2) as [cfg_t trans_t]. inversion Heqstep_result. }
+        
+        (* 3. Le repos *)
+        unfold system_step in Heqstep_result.
+        destruct (schedule_node n) as [n_sched | ].
+        { 
+          destruct (node_step (build_config n) n_sched) as [cfg_next trans_next]. 
+          inversion Heqstep_result. 
+        }
+        { 
+          (* Fin du jeu. *)
+          inversion Heqstep_result; subst. 
+          reflexivity. 
+        }
+
+Admitted.
 
 End Construction_Execution_Partitionnee.
 
