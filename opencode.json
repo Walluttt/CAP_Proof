@@ -1,0 +1,66 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "AGENTS.md",
+  ],
+  "lsp": true,
+  "permission": {
+    "external_directory": {
+      "/tmp/*": "allow",
+      "*": "deny"
+    }
+  },
+  "mcp": {
+    "sequential-thinking": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "enabled": true
+    },
+    "arxiv": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "arxiv-mcp-server"
+      ],
+      "enabled": true
+    },
+    "duckduckgo": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "duckduckgo-mcp-server"
+      ],
+      "enabled": true,
+      "timeout": 30000
+    },
+    "serena": {
+      "type": "local",
+      "command": [
+        "serena",
+        "start-mcp-server",
+        "--project-from-cwd",
+        "--transport",
+        "stdio"
+      ],
+      "enabled": true,
+      "timeout": 30000
+    },
+    "rocq": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "--from",
+        "rocq-mcp-server"
+      ],
+      "enabled": true
+    }
+  }
+}
