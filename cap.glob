@@ -1,0 +1,2198 @@
+DIGEST 372fc62f60255eb0f974277c56b0c365
+Fcap
+R39:42 Stdlib.Lists.List <> <> lib
+R60:63 Stdlib.Bool.Bool <> <> lib
+R81:85 Stdlib.Arith.Arith <> <> lib
+R95:107 Stdlib.Lists.List ListNotations <> mod
+R125:135 Stdlib.Wellfounded.Wellfounded <> <> lib
+R153:167 Stdlib.Vectors.Fin <> <> lib
+R185:187 Stdlib.micromega.Lia <> <> lib
+R205:230 Stdlib.Logic.ProofIrrelevance <> <> lib
+rec 458:460 <> ADT
+proj 491:495 <> etats
+proj 508:517 <> transition
+proj 549:555 <> initial
+binder 463:463 <> E:1
+binder 474:474 <> S:2
+R526:529 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R521:525 cap <> etats:4 meth
+R531:534 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R530:530 cap <> E:1 var
+R540:542 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R535:539 cap <> etats:4 meth
+R543:543 cap <> S:2 var
+R559:563 cap <> etats:4 meth
+sec 577:587 <> Mem_Section
+var 601:601 Mem_Section X
+var 622:629 Mem_Section eq_dec_X
+R647:647 cap <> Mem_Section.X var
+binder 641:641 <> x:9
+binder 643:643 <> y:10
+R651:651 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R657:661 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R668:668 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R653:655 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R652:652 cap <> x:9 var
+R656:656 cap <> y:10 var
+R663:666 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R662:662 cap <> x:9 var
+R667:667 cap <> y:10 var
+var 682:687 Mem_Section to_nat
+R692:695 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R691:691 cap <> Mem_Section.X var
+R696:698 Corelib.Init.Datatypes <> nat ind
+var 712:727 Mem_Section to_nat_injective
+R744:744 cap <> Mem_Section.X var
+binder 738:738 <> x:15
+binder 740:740 <> y:16
+R766:769 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R755:757 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R747:752 cap <> Mem_Section.to_nat var
+R754:754 cap <> x:15 var
+R758:763 cap <> Mem_Section.to_nat var
+R765:765 cap <> y:16 var
+R771:773 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R770:770 cap <> x:15 var
+R774:774 cap <> y:16 var
+ind 790:800 <> Command_mem
+constr 809:813 <> write
+constr 845:848 <> read
+R818:821 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R817:817 cap <> Mem_Section.X var
+R825:828 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R822:824 Corelib.Init.Datatypes <> nat ind
+R829:839 cap <> Command_mem:19 ind
+R853:856 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R852:852 cap <> Mem_Section.X var
+R857:867 cap <> Command_mem:19 ind
+scheme 790:800 <> Command_mem_rect
+scheme 790:800 <> Command_mem_ind
+scheme 790:800 <> Command_mem_rec
+scheme 790:800 <> Command_mem_sind
+ind 883:899 <> Response_type_mem
+constr 908:914 <> out_mem
+constr 952:961 <> bottom_mem
+R919:922 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R918:918 cap <> Mem_Section.X var
+R926:929 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R923:925 Corelib.Init.Datatypes <> nat ind
+R930:946 cap <> Response_type_mem:21 ind
+R965:981 cap <> Response_type_mem:21 ind
+scheme 883:899 <> Response_type_mem_rect
+scheme 883:899 <> Response_type_mem_ind
+scheme 883:899 <> Response_type_mem_rec
+scheme 883:899 <> Response_type_mem_sind
+def 998:1006 <> State_mem
+R1012:1015 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1011:1011 cap <> Mem_Section.X var
+R1016:1018 Corelib.Init.Datatypes <> nat ind
+def 1034:1041 <> Init_mem
+R1045:1053 cap <> State_mem def
+def 1084:1097 <> Transition_mem
+R1108:1116 cap <> State_mem def
+binder 1100:1104 <> state:23
+R1124:1134 cap <> Command_mem ind
+binder 1120:1120 <> c:24
+R1149:1151 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1140:1148 cap <> State_mem def
+R1152:1168 cap <> Response_type_mem ind
+R1184:1184 cap <> c:24 var
+R1197:1201 cap <> write constr
+R1210:1210 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1255:1256 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1267:1267 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 1215:1215 <> y:26
+R1223:1230 cap <> Mem_Section.eq_dec_X var
+R1232:1232 cap <> y:26 var
+R1248:1252 cap <> state:23 var
+R1254:1254 cap <> y:26 var
+R1257:1266 cap <> bottom_mem constr
+R1275:1278 cap <> read constr
+R1287:1287 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1293:1294 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1314:1314 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1288:1292 cap <> state:23 var
+R1295:1301 cap <> out_mem constr
+R1306:1310 cap <> state:23 var
+def 1339:1340 <> MX
+R1344:1346 cap <> ADT rec
+R1360:1376 cap <> Response_type_mem ind
+R1348:1358 cap <> Command_mem ind
+R1388:1392 cap <> etats proj
+R1388:1392 cap <> etats proj
+R1388:1392 cap <> etats proj
+R1412:1421 cap <> transition proj
+R1412:1421 cap <> transition proj
+R1446:1452 cap <> initial proj
+R1446:1452 cap <> initial proj
+R1397:1405 cap <> State_mem def
+R1426:1439 cap <> Transition_mem def
+R1457:1464 cap <> Init_mem def
+R1476:1486 cap Mem_Section <> sec
+rec 1715:1722 <> Histoire
+proj 1742:1747 <> events
+proj 1760:1764 <> label
+proj 1784:1786 <> ord
+proj 1819:1822 <> refl
+proj 1848:1852 <> trans
+binder 1725:1725 <> A:27
+R1774:1777 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1768:1773 cap <> events:29 meth
+R1778:1778 cap <> A:27 var
+R1796:1799 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1790:1795 cap <> events:29 meth
+R1806:1809 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1800:1805 cap <> events:29 meth
+binder 1833:1833 <> a:32
+R1836:1838 cap <> ord:31 meth
+R1842:1842 cap <> a:32 var
+R1840:1840 cap <> a:32 var
+binder 1863:1863 <> a:34
+binder 1865:1865 <> b:35
+binder 1867:1867 <> c:36
+R1877:1880 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1870:1872 cap <> ord:31 meth
+R1876:1876 cap <> b:35 var
+R1874:1874 cap <> a:34 var
+R1888:1891 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1881:1883 cap <> ord:31 meth
+R1887:1887 cap <> c:36 var
+R1885:1885 cap <> b:35 var
+R1892:1894 cap <> ord:31 meth
+R1898:1898 cap <> c:36 var
+R1896:1896 cap <> a:34 var
+rec 1911:1913 <> Seq
+proj 1933:1935 <> seq
+proj 1960:1975 <> does_not_restart
+binder 1916:1916 <> A:38
+R1943:1946 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1940:1942 Corelib.Init.Datatypes <> nat ind
+R1947:1952 Corelib.Init.Datatypes <> option ind
+R1954:1954 cap <> A:38 var
+binder 1986:1986 <> n:41
+R2001:2004 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1994:1996 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1989:1991 cap <> seq:40 meth
+R1993:1993 cap <> n:41 var
+R1997:2000 Corelib.Init.Datatypes <> None constr
+R2014:2016 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2005:2007 cap <> seq:40 meth
+R2010:2010 Corelib.Init.Datatypes <> S constr
+R2012:2012 cap <> n:41 var
+R2017:2020 Corelib.Init.Datatypes <> None constr
+def 2037:2051 <> seq_is_infinite
+binder 2054:2054 <> A:43
+R2069:2071 cap <> Seq rec
+R2073:2073 cap <> A:43 var
+binder 2065:2065 <> s:44
+R2101:2103 Corelib.Init.Datatypes <> nat ind
+binder 2097:2097 <> n:45
+R2106:2107 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R2109:2111 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R2113:2115 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R2128:2129 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R2112:2112 cap <> A:43 var
+binder 2108:2108 <> a:46
+R2119:2121 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2116:2116 cap <> s:44 var
+R2118:2118 cap <> n:45 var
+R2122:2125 Corelib.Init.Datatypes <> Some constr
+R2127:2127 cap <> a:46 var
+def 2144:2156 <> seq_is_finite
+binder 2159:2159 <> A:47
+R2174:2176 cap <> Seq rec
+R2178:2178 cap <> A:47 var
+binder 2170:2170 <> s:48
+R2195:2196 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R2198:2200 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R2204:2206 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R2217:2218 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R2201:2203 Corelib.Init.Datatypes <> nat ind
+binder 2197:2197 <> n:49
+R2210:2212 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2207:2207 cap <> s:48 var
+R2209:2209 cap <> n:49 var
+R2213:2216 Corelib.Init.Datatypes <> None constr
+def 2231:2234 <> eval
+binder 2237:2237 <> E:50
+binder 2239:2241 <> Sor:51
+R2249:2251 cap <> ADT rec
+R2255:2257 cap <> Sor:51 var
+R2253:2253 cap <> E:50 var
+binder 2245:2245 <> A:52
+R2268:2270 cap <> Seq rec
+R2272:2272 cap <> E:50 var
+binder 2261:2264 <> aseq:53
+R2280:2282 Corelib.Init.Datatypes <> nat ind
+binder 2276:2276 <> n:54
+R2290:2294 cap <> etats proj
+R2287:2287 cap <> A:52 var
+R2308:2308 cap <> n:54 var
+R2327:2333 cap <> initial proj
+R2324:2324 cap <> A:52 var
+R2340:2340 Corelib.Init.Datatypes <> S constr
+R2353:2356 cap <> aseq:53 var
+R2358:2358 cap <> n:54 var
+R2371:2374 Corelib.Init.Datatypes <> None constr
+R2379:2382 cap <> eval:55 def
+R2391:2391 cap <> n:54 var
+R2386:2389 cap <> aseq:53 var
+R2384:2384 cap <> A:52 var
+R2399:2402 Corelib.Init.Datatypes <> Some constr
+R2409:2411 Corelib.Init.Datatypes <> fst def
+R2417:2426 cap <> transition proj
+R2414:2414 cap <> A:52 var
+R2430:2433 cap <> eval:55 def
+R2442:2442 cap <> n:54 var
+R2437:2440 cap <> aseq:53 var
+R2435:2435 cap <> A:52 var
+def 2485:2490 <> ADTSeq
+binder 2493:2493 <> E:57
+binder 2495:2495 <> S:58
+R2503:2505 cap <> ADT rec
+R2509:2509 cap <> S:58 var
+R2507:2507 cap <> E:57 var
+binder 2499:2499 <> A:59
+R2520:2522 cap <> Seq rec
+R2524:2524 cap <> E:57 var
+binder 2513:2516 <> aseq:60
+R2529:2531 cap <> Seq rec
+R2535:2537 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2534:2534 cap <> E:57 var
+R2538:2538 cap <> S:58 var
+R2549:2551 cap <> seq proj
+R2549:2551 cap <> seq proj
+R2549:2551 cap <> seq proj
+R2645:2660 cap <> does_not_restart proj
+R2645:2660 cap <> does_not_restart proj
+binder 2560:2560 <> n:61
+R2565:2574 Corelib.Init.Datatypes <> option_map def
+R2633:2636 cap <> aseq:60 var
+R2638:2638 cap <> n:61 var
+binder 2581:2581 <> e:62
+R2586:2586 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2588:2590 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2629:2629 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2587:2587 cap <> e:62 var
+R2591:2593 Corelib.Init.Datatypes <> snd def
+R2599:2608 cap <> transition proj
+R2596:2596 cap <> A:59 var
+R2627:2627 cap <> e:62 var
+R2612:2615 cap <> eval def
+R2624:2624 cap <> n:61 var
+R2619:2622 cap <> aseq:60 var
+R2617:2617 cap <> A:59 var
+R2713:2728 cap <> does_not_restart proj
+R2713:2728 cap <> does_not_restart proj
+R2791:2797 Corelib.Init.Logic <> eq_refl constr
+R2791:2797 Corelib.Init.Logic <> eq_refl constr
+R2791:2797 Corelib.Init.Logic <> eq_refl constr
+rec 2832:2839 <> EventSeq
+proj 2895:2902 <> monotone
+proj 3006:3013 <> exhausts
+binder 2842:2842 <> A:63
+R2850:2857 cap <> Histoire rec
+R2859:2859 cap <> A:63 var
+binder 2846:2846 <> H:64
+R2870:2872 cap <> Seq rec
+R2878:2883 cap <> events proj
+R2875:2875 cap <> H:64 var
+binder 2863:2866 <> eseq:65
+binder 2913:2913 <> i:67
+binder 2915:2915 <> j:68
+binder 2917:2917 <> a:69
+binder 2919:2919 <> b:70
+R2942:2950 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2933:2935 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2927:2930 cap <> eseq:65 var
+R2932:2932 cap <> i:67 var
+R2936:2939 Corelib.Init.Datatypes <> Some constr
+R2941:2941 cap <> a:69 var
+R2966:2974 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2957:2959 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2951:2954 cap <> eseq:65 var
+R2956:2956 cap <> j:68 var
+R2960:2963 Corelib.Init.Datatypes <> Some constr
+R2965:2965 cap <> b:70 var
+R2986:2994 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2978:2980 cap <> ord proj
+R2975:2975 cap <> H:64 var
+R2985:2985 cap <> b:70 var
+R2983:2983 cap <> a:69 var
+R2996:2999 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R2995:2995 cap <> i:67 var
+R3000:3000 cap <> j:68 var
+binder 3024:3024 <> e:72
+R3027:3028 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R3030:3032 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R3036:3038 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R3054:3055 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R3033:3035 Corelib.Init.Datatypes <> nat ind
+binder 3029:3029 <> n:73
+R3045:3047 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3039:3042 cap <> eseq:65 var
+R3044:3044 cap <> n:73 var
+R3048:3051 Corelib.Init.Datatypes <> Some constr
+R3053:3053 cap <> e:72 var
+def 3082:3083 <> Ba
+binder 3086:3086 <> A:75
+R3094:3101 cap <> Histoire rec
+R3103:3103 cap <> A:75 var
+binder 3090:3090 <> H:76
+R3114:3116 cap <> Seq rec
+R3121:3126 cap <> events proj
+R3118:3118 cap <> H:76 var
+binder 3107:3110 <> eseq:77
+R3132:3134 cap <> Seq rec
+R3136:3136 cap <> A:75 var
+R3146:3148 cap <> seq proj
+R3146:3148 cap <> seq proj
+R3146:3148 cap <> seq proj
+R3213:3228 cap <> does_not_restart proj
+R3213:3228 cap <> does_not_restart proj
+binder 3157:3157 <> n:78
+R3163:3172 Corelib.Init.Datatypes <> option_map def
+R3200:3203 cap <> eseq:77 var
+R3205:3205 cap <> n:78 var
+binder 3179:3180 <> ev:79
+R3188:3192 cap <> label proj
+R3185:3185 cap <> H:76 var
+R3195:3196 cap <> ev:79 var
+R3282:3297 cap <> does_not_restart proj
+R3282:3297 cap <> does_not_restart proj
+R3361:3367 Corelib.Init.Logic <> eq_refl constr
+R3361:3367 Corelib.Init.Logic <> eq_refl constr
+R3361:3367 Corelib.Init.Logic <> eq_refl constr
+def 3406:3413 <> crit_seq
+binder 3416:3416 <> E:80
+binder 3418:3418 <> S:81
+R3426:3428 cap <> ADT rec
+R3432:3432 cap <> S:81 var
+R3430:3430 cap <> E:80 var
+binder 3422:3422 <> A:82
+R3440:3447 cap <> Histoire rec
+R3451:3453 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3450:3450 cap <> E:80 var
+R3454:3454 cap <> S:81 var
+binder 3436:3436 <> H:83
+R3470:3471 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R3476:3478 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R3484:3490 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R3583:3584 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R3479:3481 cap <> Seq rec
+R3483:3483 cap <> E:80 var
+binder 3472:3475 <> aseq:84
+R3491:3491 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R3496:3498 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R3515:3517 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R3582:3582 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R3499:3501 cap <> Seq rec
+R3507:3512 cap <> events proj
+R3504:3504 cap <> H:83 var
+binder 3492:3495 <> eseq:85
+R3534:3537 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3575:3575 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3519:3526 cap <> EventSeq rec
+R3530:3533 cap <> eseq:85 var
+R3528:3528 cap <> H:83 var
+binder 3545:3545 <> n:86
+R3563:3565 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3548:3553 cap <> ADTSeq def
+R3562:3562 cap <> n:86 var
+R3557:3560 cap <> aseq:84 var
+R3555:3555 cap <> A:82 var
+R3566:3567 cap <> Ba def
+R3574:3574 cap <> n:86 var
+R3569:3572 cap <> eseq:85 var
+sec 3815:3834 <> Algorithme_Distribue
+var 3848:3851 Algorithme_Distribue Node
+var 3872:3882 Algorithme_Distribue eq_node_dec
+R3899:3902 cap <> Algorithme_Distribue.Node var
+binder 3893:3893 <> x:89
+binder 3895:3895 <> y:90
+R3905:3905 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R3911:3915 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R3922:3922 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R3907:3909 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3906:3906 cap <> x:89 var
+R3910:3910 cap <> y:90 var
+R3917:3920 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3916:3916 cap <> x:89 var
+R3921:3921 cap <> y:90 var
+var 3936:3942 Algorithme_Distribue Message
+var 3963:3972 Algorithme_Distribue eq_msg_dec
+R3989:3995 cap <> Algorithme_Distribue.Message var
+binder 3983:3983 <> x:95
+binder 3985:3985 <> y:96
+R3998:3998 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R4004:4008 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R4015:4015 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R4000:4002 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3999:3999 cap <> x:95 var
+R4003:4003 cap <> y:96 var
+R4010:4013 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R4009:4009 cap <> x:95 var
+R4014:4014 cap <> y:96 var
+var 4029:4029 Algorithme_Distribue C
+var 4031:4031 Algorithme_Distribue R
+var 4053:4053 Algorithme_Distribue Q
+ind 4076:4085 <> Transition
+constr 4094:4097 <> call
+constr 4125:4127 <> ret
+constr 4156:4159 <> send
+constr 4201:4207 <> receive
+constr 4246:4253 <> internal
+R4106:4109 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4105:4105 cap <> Algorithme_Distribue.C var
+R4110:4119 cap <> Transition:105 ind
+R4137:4140 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4136:4136 cap <> Algorithme_Distribue.R var
+R4141:4150 cap <> Transition:105 ind
+R4174:4177 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4167:4173 cap <> Algorithme_Distribue.Message var
+R4182:4185 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4178:4181 cap <> Algorithme_Distribue.Node var
+R4186:4195 cap <> Transition:105 ind
+R4219:4222 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4212:4218 cap <> Algorithme_Distribue.Message var
+R4227:4230 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4223:4226 cap <> Algorithme_Distribue.Node var
+R4231:4240 cap <> Transition:105 ind
+R4257:4266 cap <> Transition:105 ind
+scheme 4076:4085 <> Transition_rect
+scheme 4076:4085 <> Transition_ind
+scheme 4076:4085 <> Transition_rec
+scheme 4076:4085 <> Transition_sind
+ind 4282:4296 <> LocalTransition
+constr 4305:4315 <> LS_Internal
+constr 4321:4327 <> LS_Send
+constr 4361:4369 <> LS_Return
+R4334:4340 cap <> Algorithme_Distribue.Message var
+binder 4330:4330 <> m:109
+R4351:4354 cap <> Algorithme_Distribue.Node var
+binder 4344:4347 <> dest:110
+R4376:4376 cap <> Algorithme_Distribue.R var
+binder 4372:4372 <> r:111
+scheme 4282:4296 <> LocalTransition_rect
+scheme 4282:4296 <> LocalTransition_ind
+scheme 4282:4296 <> LocalTransition_rec
+scheme 4282:4296 <> LocalTransition_sind
+def 4394:4401 <> to_Trans
+R4409:4423 cap <> LocalTransition ind
+binder 4404:4405 <> lt:112
+R4428:4437 cap <> Transition ind
+R4452:4453 cap <> lt:112 var
+R4466:4476 cap <> LS_Internal constr
+R4481:4488 cap <> internal constr
+R4496:4502 cap <> LS_Send constr
+R4514:4517 cap <> send constr
+R4532:4540 cap <> LS_Return constr
+R4547:4549 cap <> ret constr
+def 4576:4590 <> is_local_action
+R4597:4606 cap <> Transition ind
+binder 4593:4593 <> t:114
+R4611:4614 Corelib.Init.Datatypes <> bool ind
+R4629:4629 cap <> t:114 var
+R4642:4649 cap <> internal constr
+R4657:4660 Corelib.Init.Datatypes <> true constr
+R4668:4671 cap <> send constr
+R4683:4686 Corelib.Init.Datatypes <> true constr
+R4694:4696 cap <> ret constr
+R4709:4712 Corelib.Init.Datatypes <> true constr
+R4720:4723 cap <> call constr
+R4735:4739 Corelib.Init.Datatypes <> false constr
+R4747:4753 cap <> receive constr
+R4762:4766 Corelib.Init.Datatypes <> false constr
+rec 4787:4796 <> Algorithme
+proj 4807:4816 <> init_state
+proj 4828:4831 <> step
+proj 4870:4879 <> local_step
+proj 4923:4941 <> local_step_is_valid
+proj 5047:5065 <> local_step_ret_spec
+proj 5214:5223 <> input_step
+R4820:4820 cap <> Algorithme_Distribue.Q var
+R4836:4839 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4835:4835 cap <> Algorithme_Distribue.Q var
+R4850:4853 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4840:4849 cap <> Transition ind
+R4855:4858 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4854:4854 cap <> Algorithme_Distribue.Q var
+R4884:4887 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4883:4883 cap <> Algorithme_Distribue.Q var
+R4888:4889 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R4892:4894 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R4910:4912 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R4914:4915 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R4895:4909 cap <> LocalTransition ind
+binder 4890:4891 <> lt:119
+R4913:4913 cap <> Algorithme_Distribue.Q var
+binder 4952:4952 <> q:121
+R4987:4996 cap <> local_step:120 meth
+R4998:4998 cap <> q:121 var
+R4968:4973 Corelib.Init.Specif <> existT constr
+R5010:5013 cap <> step:118 meth
+R5018:5025 cap <> to_Trans def
+R5015:5015 cap <> q:121 var
+R5081:5081 cap <> Algorithme_Distribue.Q var
+binder 5077:5077 <> q:123
+R5089:5089 cap <> Algorithme_Distribue.R var
+binder 5085:5085 <> r:124
+R5098:5098 cap <> Algorithme_Distribue.Q var
+binder 5093:5094 <> q':125
+R5148:5157 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5120:5122 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5108:5117 cap <> local_step:120 meth
+R5119:5119 cap <> q:123 var
+R5123:5128 Corelib.Init.Specif <> existT constr
+R5146:5147 cap <> q':125 var
+R5133:5141 cap <> LS_Return constr
+R5143:5143 cap <> r:124 var
+R5158:5159 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R5162:5164 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R5166:5168 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R5199:5200 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R5165:5165 cap <> Algorithme_Distribue.Q var
+binder 5160:5161 <> q0:126
+R5169:5170 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R5172:5174 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R5176:5178 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R5197:5198 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R5175:5175 cap <> Algorithme_Distribue.C var
+binder 5171:5171 <> c:127
+R5179:5182 cap <> step:118 meth
+R5196:5196 cap <> q:123 var
+R5188:5191 cap <> call constr
+R5193:5193 cap <> c:127 var
+R5184:5185 cap <> q0:126 var
+R5239:5239 cap <> Algorithme_Distribue.Q var
+binder 5235:5235 <> q:129
+R5247:5256 cap <> Transition ind
+binder 5243:5243 <> t:130
+R5292:5295 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5284:5286 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5267:5281 cap <> is_local_action def
+R5283:5283 cap <> t:130 var
+R5287:5291 Corelib.Init.Datatypes <> false constr
+R5296:5297 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R5300:5302 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R5304:5306 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R5318:5319 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R5303:5303 cap <> Algorithme_Distribue.Q var
+binder 5298:5299 <> q':131
+R5307:5310 cap <> step:118 meth
+R5316:5317 cap <> q':131 var
+R5314:5314 cap <> t:130 var
+R5312:5312 cap <> q:129 var
+rec 5336:5341 <> Config
+proj 5352:5357 <> states
+proj 5377:5383 <> network
+proj 5422:5433 <> pending_call
+R5365:5368 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5361:5364 cap <> Algorithme_Distribue.Node var
+R5369:5369 cap <> Algorithme_Distribue.Q var
+R5387:5390 Corelib.Init.Datatypes <> list ind
+R5407:5409 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5400:5402 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5393:5399 cap <> Algorithme_Distribue.Message var
+R5403:5406 cap <> Algorithme_Distribue.Node var
+R5410:5413 cap <> Algorithme_Distribue.Node var
+R5441:5444 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5437:5440 cap <> Algorithme_Distribue.Node var
+R5445:5448 Corelib.Init.Datatypes <> bool ind
+def 5469:5483 <> config_initiale
+R5490:5499 cap <> Algorithme rec
+binder 5486:5486 <> A:137
+R5504:5509 cap <> Config rec
+R5521:5526 cap <> states proj
+R5521:5526 cap <> states proj
+R5521:5526 cap <> states proj
+R5561:5567 cap <> network proj
+R5561:5567 cap <> network proj
+R5581:5592 cap <> pending_call proj
+R5581:5592 cap <> pending_call proj
+R5543:5552 cap <> init_state proj
+R5540:5540 cap <> A:137 var
+R5572:5574 Corelib.Init.Datatypes <> nil constr
+R5606:5610 Corelib.Init.Datatypes <> false constr
+def 5632:5643 <> update_state
+R5655:5658 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5651:5654 cap <> Algorithme_Distribue.Node var
+R5659:5659 cap <> Algorithme_Distribue.Q var
+binder 5646:5647 <> st:138
+R5667:5670 cap <> Algorithme_Distribue.Node var
+binder 5663:5663 <> n:139
+R5682:5682 cap <> Algorithme_Distribue.Q var
+binder 5674:5678 <> new_q:140
+R5691:5694 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5687:5690 cap <> Algorithme_Distribue.Node var
+R5695:5695 cap <> Algorithme_Distribue.Q var
+binder 5708:5708 <> x:141
+R5716:5726 cap <> Algorithme_Distribue.eq_node_dec var
+R5730:5730 cap <> n:139 var
+R5728:5728 cap <> x:141 var
+R5748:5749 cap <> st:138 var
+R5751:5751 cap <> x:141 var
+R5737:5741 cap <> new_q:140 var
+def 5768:5781 <> update_pending
+R5793:5796 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5789:5792 cap <> Algorithme_Distribue.Node var
+R5797:5800 Corelib.Init.Datatypes <> bool ind
+binder 5784:5785 <> pc:142
+R5808:5811 cap <> Algorithme_Distribue.Node var
+binder 5804:5804 <> n:143
+R5819:5822 Corelib.Init.Datatypes <> bool ind
+binder 5815:5815 <> b:144
+R5831:5834 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5827:5830 cap <> Algorithme_Distribue.Node var
+R5835:5838 Corelib.Init.Datatypes <> bool ind
+binder 5851:5851 <> x:145
+R5859:5869 cap <> Algorithme_Distribue.eq_node_dec var
+R5873:5873 cap <> n:143 var
+R5871:5871 cap <> x:145 var
+R5887:5888 cap <> pc:142 var
+R5890:5890 cap <> x:145 var
+R5880:5880 cap <> b:144 var
+def 5907:5913 <> add_msg
+R5922:5925 Corelib.Init.Datatypes <> list ind
+R5942:5944 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5935:5937 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5928:5934 cap <> Algorithme_Distribue.Message var
+R5938:5941 cap <> Algorithme_Distribue.Node var
+R5945:5948 cap <> Algorithme_Distribue.Node var
+binder 5916:5918 <> net:146
+R5957:5963 cap <> Algorithme_Distribue.Message var
+binder 5953:5953 <> m:147
+R5977:5980 cap <> Algorithme_Distribue.Node var
+binder 5967:5969 <> src:148
+binder 5971:5973 <> dst:149
+R6003:6006 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5990:5990 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5992:5993 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5997:5998 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6002:6002 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5991:5991 cap <> m:147 var
+R5994:5996 cap <> src:148 var
+R5999:6001 cap <> dst:149 var
+R6007:6009 cap <> net:146 var
+def 6081:6090 <> remove_msg
+R6099:6102 Corelib.Init.Datatypes <> list ind
+R6119:6121 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R6112:6114 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R6105:6111 cap <> Algorithme_Distribue.Message var
+R6115:6118 cap <> Algorithme_Distribue.Node var
+R6122:6125 cap <> Algorithme_Distribue.Node var
+binder 6093:6095 <> net:150
+R6134:6140 cap <> Algorithme_Distribue.Message var
+binder 6130:6130 <> m:151
+R6154:6157 cap <> Algorithme_Distribue.Node var
+binder 6144:6146 <> src:152
+binder 6148:6150 <> dst:153
+R6162:6165 Corelib.Init.Datatypes <> list ind
+R6182:6184 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R6175:6177 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R6168:6174 cap <> Algorithme_Distribue.Message var
+R6178:6181 cap <> Algorithme_Distribue.Node var
+R6185:6188 cap <> Algorithme_Distribue.Node var
+R6204:6206 cap <> net:150 var
+R6219:6221 Corelib.Init.Datatypes <> nil constr
+R6226:6228 Corelib.Init.Datatypes <> nil constr
+R6248:6251 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6236:6236 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6239:6240 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6243:6244 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6247:6247 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6271:6280 cap <> Algorithme_Distribue.eq_msg_dec var
+R6285:6285 cap <> m:151 var
+R6563:6566 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6551:6551 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6554:6555 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6558:6559 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6562:6562 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6567:6576 cap <> remove_msg:154 def
+R6589:6591 cap <> dst:153 var
+R6585:6587 cap <> src:152 var
+R6583:6583 cap <> m:151 var
+R6305:6315 cap <> Algorithme_Distribue.eq_node_dec var
+R6320:6322 cap <> src:152 var
+R6508:6511 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6496:6496 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6499:6500 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6503:6504 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6507:6507 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6512:6521 cap <> remove_msg:154 def
+R6534:6536 cap <> dst:153 var
+R6530:6532 cap <> src:152 var
+R6528:6528 cap <> m:151 var
+R6344:6354 cap <> Algorithme_Distribue.eq_node_dec var
+R6359:6361 cap <> dst:153 var
+R6451:6454 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6439:6439 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6442:6443 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6446:6447 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6450:6450 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6455:6464 cap <> remove_msg:154 def
+R6477:6479 cap <> dst:153 var
+R6473:6475 cap <> src:152 var
+R6471:6471 cap <> m:151 var
+def 6614:6625 <> contains_msg
+R6634:6637 Corelib.Init.Datatypes <> list ind
+R6654:6656 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R6647:6649 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R6640:6646 cap <> Algorithme_Distribue.Message var
+R6650:6653 cap <> Algorithme_Distribue.Node var
+R6657:6660 cap <> Algorithme_Distribue.Node var
+binder 6628:6630 <> net:156
+R6669:6675 cap <> Algorithme_Distribue.Message var
+binder 6665:6665 <> m:157
+R6689:6692 cap <> Algorithme_Distribue.Node var
+binder 6679:6681 <> src:158
+binder 6683:6685 <> dst:159
+R6697:6700 Corelib.Init.Datatypes <> bool ind
+R6715:6717 cap <> net:156 var
+R6730:6732 Corelib.Init.Datatypes <> nil constr
+R6737:6741 Corelib.Init.Datatypes <> false constr
+R6761:6764 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6749:6749 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6752:6753 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6756:6757 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6760:6760 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6784:6793 cap <> Algorithme_Distribue.eq_msg_dec var
+R6798:6798 cap <> m:157 var
+R6987:6998 cap <> contains_msg:160 def
+R7011:7013 cap <> dst:159 var
+R7007:7009 cap <> src:158 var
+R7005:7005 cap <> m:157 var
+R6818:6828 cap <> Algorithme_Distribue.eq_node_dec var
+R6833:6835 cap <> src:158 var
+R6946:6957 cap <> contains_msg:160 def
+R6970:6972 cap <> dst:159 var
+R6966:6968 cap <> src:158 var
+R6964:6964 cap <> m:157 var
+R6857:6867 cap <> Algorithme_Distribue.eq_node_dec var
+R6872:6874 cap <> dst:159 var
+R6903:6914 cap <> contains_msg:160 def
+R6927:6929 cap <> dst:159 var
+R6923:6925 cap <> src:158 var
+R6921:6921 cap <> m:157 var
+R6881:6884 Corelib.Init.Datatypes <> true constr
+ind 7500:7509 <> Valid_Step
+constr 7607:7616 <> step_intro
+R7516:7525 cap <> Algorithme rec
+binder 7512:7512 <> A:162
+R7535:7540 cap <> Config rec
+binder 7529:7531 <> cfg:163
+R7548:7551 cap <> Algorithme_Distribue.Node var
+binder 7544:7544 <> n:164
+R7559:7568 cap <> Transition ind
+binder 7555:7555 <> t:165
+R7583:7588 cap <> Config rec
+binder 7572:7579 <> next_cfg:166
+R7678:7689 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7632:7635 cap <> step proj
+R7629:7629 cap <> A:162 var
+R7668:7673 cap <> states proj
+R7658:7665 cap <> next_cfg:166 var
+R7676:7676 cap <> n:164 var
+R7655:7655 cap <> t:165 var
+R7644:7649 cap <> states proj
+R7639:7641 cap <> cfg:163 var
+R7652:7652 cap <> n:164 var
+R7690:7690 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7760:7772 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7708:7710 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7701:7706 cap <> states proj
+R7691:7698 cap <> next_cfg:166 var
+R7711:7722 cap <> update_state def
+R7750:7755 cap <> states proj
+R7740:7747 cap <> next_cfg:166 var
+R7758:7758 cap <> n:164 var
+R7737:7737 cap <> n:164 var
+R7729:7734 cap <> states proj
+R7724:7726 cap <> cfg:163 var
+R8715:8726 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7779:7779 cap <> t:165 var
+R7809:7812 cap <> call constr
+R7935:7938 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R7973:7973 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R7834:7834 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R7863:7867 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R7934:7934 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R7855:7857 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7840:7851 cap <> pending_call proj
+R7835:7837 cap <> cfg:163 var
+R7854:7854 cap <> n:164 var
+R7858:7862 Corelib.Init.Datatypes <> false constr
+R7891:7893 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7878:7889 cap <> pending_call proj
+R7868:7875 cap <> next_cfg:166 var
+R7894:7907 cap <> update_pending def
+R7930:7933 Corelib.Init.Datatypes <> true constr
+R7928:7928 cap <> n:164 var
+R7914:7925 cap <> pending_call proj
+R7909:7911 cap <> cfg:163 var
+R7957:7959 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7949:7955 cap <> network proj
+R7939:7946 cap <> next_cfg:166 var
+R7965:7971 cap <> network proj
+R7960:7962 cap <> cfg:163 var
+R7992:7994 cap <> ret constr
+R8117:8120 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8155:8155 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8016:8016 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8044:8048 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8116:8116 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8037:8039 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8022:8033 cap <> pending_call proj
+R8017:8019 cap <> cfg:163 var
+R8036:8036 cap <> n:164 var
+R8040:8043 Corelib.Init.Datatypes <> true constr
+R8072:8074 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8059:8070 cap <> pending_call proj
+R8049:8056 cap <> next_cfg:166 var
+R8075:8088 cap <> update_pending def
+R8111:8115 Corelib.Init.Datatypes <> false constr
+R8109:8109 cap <> n:164 var
+R8095:8106 cap <> pending_call proj
+R8090:8092 cap <> cfg:163 var
+R8139:8141 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8131:8137 cap <> network proj
+R8121:8128 cap <> next_cfg:166 var
+R8147:8153 cap <> network proj
+R8142:8144 cap <> cfg:163 var
+R8174:8177 cap <> send constr
+R8204:8204 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8249:8253 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8305:8305 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8228:8230 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8215:8226 cap <> pending_call proj
+R8205:8212 cap <> next_cfg:166 var
+R8236:8247 cap <> pending_call proj
+R8231:8233 cap <> cfg:163 var
+R8272:8274 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8264:8270 cap <> network proj
+R8254:8261 cap <> next_cfg:166 var
+R8275:8281 cap <> add_msg def
+R8299:8299 cap <> n:164 var
+R8288:8294 cap <> network proj
+R8283:8285 cap <> cfg:163 var
+R8324:8330 cap <> receive constr
+R8448:8511 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8565:8565 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8356:8356 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8401:8405 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8447:8447 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8380:8382 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8367:8378 cap <> pending_call proj
+R8357:8364 cap <> next_cfg:166 var
+R8388:8399 cap <> pending_call proj
+R8383:8385 cap <> cfg:163 var
+R8440:8442 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8406:8417 cap <> contains_msg def
+R8439:8439 cap <> n:164 var
+R8424:8430 cap <> network proj
+R8419:8421 cap <> cfg:163 var
+R8443:8446 Corelib.Init.Datatypes <> true constr
+R8530:8532 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8522:8528 cap <> network proj
+R8512:8519 cap <> next_cfg:166 var
+R8533:8542 cap <> remove_msg def
+R8564:8564 cap <> n:164 var
+R8549:8555 cap <> network proj
+R8544:8546 cap <> cfg:163 var
+R8584:8591 cap <> internal constr
+R8611:8611 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8656:8660 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8695:8695 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8635:8637 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8622:8633 cap <> pending_call proj
+R8612:8619 cap <> next_cfg:166 var
+R8643:8654 cap <> pending_call proj
+R8638:8640 cap <> cfg:163 var
+R8679:8681 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8671:8677 cap <> network proj
+R8661:8668 cap <> next_cfg:166 var
+R8687:8693 cap <> network proj
+R8682:8684 cap <> cfg:163 var
+R8727:8736 cap <> Valid_Step:167 ind
+R8748:8755 cap <> next_cfg:166 var
+R8746:8746 cap <> t:165 var
+R8744:8744 cap <> n:164 var
+R8740:8742 cap <> cfg:163 var
+R8738:8738 cap <> A:162 var
+scheme 7500:7509 <> Valid_Step_rect
+scheme 7500:7509 <> Valid_Step_ind
+scheme 7500:7509 <> Valid_Step_rec
+scheme 7500:7509 <> Valid_Step_sind
+def 8772:8780 <> active_at
+R8791:8794 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8788:8790 Corelib.Init.Datatypes <> nat ind
+R8795:8800 Corelib.Init.Datatypes <> option ind
+R8813:8815 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8803:8812 cap <> Transition ind
+R8816:8819 cap <> Algorithme_Distribue.Node var
+binder 8783:8784 <> tr:170
+R8828:8830 Corelib.Init.Datatypes <> nat ind
+binder 8824:8824 <> j:171
+R8839:8842 cap <> Algorithme_Distribue.Node var
+binder 8834:8835 <> nd:172
+R8857:8858 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R8864:8866 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R8877:8879 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R8903:8904 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R8867:8876 cap <> Transition ind
+binder 8859:8863 <> trans:173
+R8884:8886 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8880:8881 cap <> tr:170 var
+R8883:8883 cap <> j:171 var
+R8887:8890 Corelib.Init.Datatypes <> Some constr
+R8892:8892 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8898:8899 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8902:8902 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8893:8897 cap <> trans:173 var
+R8900:8901 cap <> nd:172 var
+def 8921:8930 <> is_correct
+R8941:8944 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8938:8940 Corelib.Init.Datatypes <> nat ind
+R8945:8950 Corelib.Init.Datatypes <> option ind
+R8963:8965 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8953:8962 cap <> Transition ind
+R8966:8969 cap <> Algorithme_Distribue.Node var
+binder 8933:8934 <> tr:174
+R8979:8982 cap <> Algorithme_Distribue.Node var
+binder 8974:8975 <> nd:175
+R9009:9011 Corelib.Init.Datatypes <> nat ind
+binder 9005:9005 <> k:176
+R9015:9016 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9018:9020 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9024:9026 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9083:9084 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9021:9023 Corelib.Init.Datatypes <> nat ind
+binder 9017:9017 <> j:177
+R9057:9059 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R9028:9029 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9032:9034 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9038:9040 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9055:9056 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9035:9037 Corelib.Init.Datatypes <> nat ind
+binder 9030:9031 <> dt:178
+R9042:9044 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9041:9041 cap <> j:177 var
+R9045:9045 Corelib.Init.Datatypes <> S constr
+R9049:9051 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R9048:9048 cap <> k:176 var
+R9052:9053 cap <> dt:178 var
+R9060:9068 cap <> active_at def
+R9075:9076 cap <> nd:175 var
+R9073:9073 cap <> j:177 var
+R9070:9071 cap <> tr:174 var
+def 9101:9110 <> is_crashed
+R9121:9124 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9118:9120 Corelib.Init.Datatypes <> nat ind
+R9125:9130 Corelib.Init.Datatypes <> option ind
+R9143:9145 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R9133:9142 cap <> Transition ind
+R9146:9149 cap <> Algorithme_Distribue.Node var
+binder 9113:9114 <> tr:179
+R9159:9162 cap <> Algorithme_Distribue.Node var
+binder 9154:9155 <> nd:180
+R9177:9178 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9180:9182 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9186:9188 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9272:9273 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9183:9185 Corelib.Init.Datatypes <> nat ind
+binder 9179:9179 <> k:181
+R9201:9203 Corelib.Init.Datatypes <> nat ind
+binder 9197:9197 <> j:182
+R9263:9266 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9237:9239 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R9208:9209 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9212:9214 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9218:9220 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9235:9236 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R9215:9217 Corelib.Init.Datatypes <> nat ind
+binder 9210:9211 <> dt:183
+R9222:9224 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9221:9221 cap <> j:182 var
+R9225:9225 Corelib.Init.Datatypes <> S constr
+R9229:9231 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R9228:9228 cap <> k:181 var
+R9232:9233 cap <> dt:183 var
+R9240:9248 cap <> active_at def
+R9255:9256 cap <> nd:180 var
+R9253:9253 cap <> j:182 var
+R9250:9251 cap <> tr:179 var
+R9267:9271 Corelib.Init.Logic <> False ind
+rec 9619:9627 <> Execution
+proj 9662:9668 <> configs
+proj 9692:9696 <> trace
+proj 9740:9748 <> init_exec
+proj 9788:9797 <> valid_exec
+proj 10050:10065 <> reliable_channel
+proj 10257:10263 <> halting
+R9634:9643 cap <> Algorithme rec
+binder 9630:9630 <> A:184
+R9675:9678 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9672:9674 Corelib.Init.Datatypes <> nat ind
+R9679:9684 cap <> Config rec
+R9703:9706 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9700:9702 Corelib.Init.Datatypes <> nat ind
+R9707:9712 Corelib.Init.Datatypes <> option ind
+R9725:9727 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R9715:9724 cap <> Transition ind
+R9728:9731 cap <> Algorithme_Distribue.Node var
+R9761:9763 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9752:9758 cap <> configs:186 meth
+R9764:9778 cap <> config_initiale def
+R9780:9780 cap <> A:184 var
+R9812:9814 Corelib.Init.Datatypes <> nat ind
+binder 9808:9808 <> n:189
+R9830:9834 cap <> trace:187 meth
+R9836:9836 cap <> n:189 var
+R9851:9854 Corelib.Init.Datatypes <> Some constr
+R9856:9856 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9858:9859 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9872:9872 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9877:9886 cap <> Valid_Step ind
+R9918:9924 cap <> configs:186 meth
+R9927:9927 Corelib.Init.Datatypes <> S constr
+R9929:9929 cap <> n:189 var
+R9891:9897 cap <> configs:186 meth
+R9899:9899 cap <> n:189 var
+R9888:9888 cap <> A:184 var
+R9941:9944 Corelib.Init.Datatypes <> None constr
+R9962:9964 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9949:9955 cap <> configs:186 meth
+R9958:9958 Corelib.Init.Datatypes <> S constr
+R9960:9960 cap <> n:189 var
+R9965:9971 cap <> configs:186 meth
+R9973:9973 cap <> n:189 var
+R10081:10083 Corelib.Init.Datatypes <> nat ind
+binder 10077:10077 <> i:191
+R10091:10097 cap <> Algorithme_Distribue.Message var
+binder 10087:10087 <> m:192
+R10111:10114 cap <> Algorithme_Distribue.Node var
+binder 10101:10103 <> src:193
+binder 10105:10107 <> dst:194
+R10156:10165 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10131:10133 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10124:10128 cap <> trace:187 meth
+R10130:10130 cap <> i:191 var
+R10134:10137 Corelib.Init.Datatypes <> Some constr
+R10139:10139 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10150:10151 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10155:10155 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10140:10143 cap <> send constr
+R10147:10149 cap <> dst:194 var
+R10145:10145 cap <> m:192 var
+R10152:10154 cap <> src:193 var
+R10186:10195 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10166:10175 cap <> is_correct def
+R10183:10185 cap <> dst:194 var
+R10177:10181 cap <> trace:187 meth
+R10196:10202 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10204:10205 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 10203:10203 <> j:195
+R10211:10214 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10207:10209 Corelib.Init.Peano <> ::nat_scope:x_'>'_x not
+R10206:10206 cap <> j:195 var
+R10210:10210 cap <> i:191 var
+R10222:10224 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10215:10219 cap <> trace:187 meth
+R10221:10221 cap <> j:195 var
+R10225:10228 Corelib.Init.Datatypes <> Some constr
+R10230:10230 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10244:10245 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10249:10249 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10231:10237 cap <> receive constr
+R10241:10243 cap <> src:193 var
+R10239:10239 cap <> m:192 var
+R10246:10248 cap <> dst:194 var
+R10278:10280 Corelib.Init.Datatypes <> nat ind
+binder 10274:10274 <> n:197
+R10297:10300 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10290:10292 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10283:10287 cap <> trace:187 meth
+R10289:10289 cap <> n:197 var
+R10293:10296 Corelib.Init.Datatypes <> None constr
+R10312:10314 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10301:10305 cap <> trace:187 meth
+R10308:10308 Corelib.Init.Datatypes <> S constr
+R10310:10310 cap <> n:197 var
+R10315:10318 Corelib.Init.Datatypes <> None constr
+def 10339:10345 <> is_call
+R10352:10361 cap <> Algorithme rec
+binder 10348:10348 <> A:199
+R10369:10377 cap <> Execution rec
+R10379:10379 cap <> A:199 var
+binder 10365:10365 <> E:200
+R10387:10389 Corelib.Init.Datatypes <> nat ind
+binder 10383:10383 <> i:201
+R10398:10401 cap <> Algorithme_Distribue.Node var
+binder 10393:10394 <> nd:202
+R10418:10419 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10421:10423 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10425:10427 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10459:10460 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10424:10424 cap <> Algorithme_Distribue.C var
+binder 10420:10420 <> c:203
+R10439:10441 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10431:10435 cap <> trace proj
+R10428:10428 cap <> E:200 var
+R10438:10438 cap <> i:201 var
+R10442:10445 Corelib.Init.Datatypes <> Some constr
+R10447:10447 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10454:10455 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10458:10458 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10448:10451 cap <> call constr
+R10453:10453 cap <> c:203 var
+R10456:10457 cap <> nd:202 var
+def 10477:10482 <> is_ret
+R10489:10498 cap <> Algorithme rec
+binder 10485:10485 <> A:204
+R10506:10514 cap <> Execution rec
+R10516:10516 cap <> A:204 var
+binder 10502:10502 <> E:205
+R10524:10526 Corelib.Init.Datatypes <> nat ind
+binder 10520:10520 <> i:206
+R10535:10538 cap <> Algorithme_Distribue.Node var
+binder 10530:10531 <> nd:207
+R10555:10556 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10558:10560 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10562:10564 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10595:10596 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10561:10561 cap <> Algorithme_Distribue.R var
+binder 10557:10557 <> r:208
+R10576:10578 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10568:10572 cap <> trace proj
+R10565:10565 cap <> E:205 var
+R10575:10575 cap <> i:206 var
+R10579:10582 Corelib.Init.Datatypes <> Some constr
+R10584:10584 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10590:10591 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10594:10594 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10585:10587 cap <> ret constr
+R10589:10589 cap <> r:208 var
+R10592:10593 cap <> nd:207 var
+ind 10612:10620 <> is_halted
+constr 10683:10694 <> halted_proof
+R10627:10636 cap <> Algorithme rec
+binder 10623:10623 <> A:209
+R10644:10652 cap <> Execution rec
+R10654:10654 cap <> A:209 var
+binder 10640:10640 <> E:210
+R10662:10664 Corelib.Init.Datatypes <> nat ind
+binder 10658:10658 <> j:211
+R10716:10719 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10709:10711 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10701:10705 cap <> trace proj
+R10698:10698 cap <> E:210 var
+R10708:10708 cap <> j:211 var
+R10712:10715 Corelib.Init.Datatypes <> None constr
+R10720:10728 cap <> is_halted:212 ind
+R10732:10732 cap <> j:211 var
+R10730:10730 cap <> E:210 var
+scheme 10612:10620 <> is_halted_rect
+scheme 10612:10620 <> is_halted_ind
+scheme 10612:10620 <> is_halted_rec
+scheme 10612:10620 <> is_halted_sind
+def 10749:10757 <> wait_free
+R10764:10773 cap <> Algorithme rec
+binder 10760:10760 <> A:214
+R10781:10789 cap <> Execution rec
+R10791:10791 cap <> A:214 var
+binder 10777:10777 <> E:215
+R10820:10822 Corelib.Init.Datatypes <> nat ind
+binder 10816:10816 <> i:216
+R10831:10834 cap <> Algorithme_Distribue.Node var
+binder 10826:10827 <> nd:217
+R10858:10868 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10844:10850 cap <> is_call def
+R10856:10857 cap <> nd:217 var
+R10854:10854 cap <> i:216 var
+R10852:10852 cap <> E:215 var
+R10869:10870 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10872:10874 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10878:10880 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10949:10950 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10875:10877 Corelib.Init.Datatypes <> nat ind
+binder 10871:10871 <> j:218
+R10909:10912 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R10942:10942 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R10882:10883 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10885:10887 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10891:10893 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10907:10908 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R10888:10890 Corelib.Init.Datatypes <> nat ind
+binder 10884:10884 <> k:219
+R10895:10897 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10894:10894 cap <> j:218 var
+R10898:10898 Corelib.Init.Datatypes <> S constr
+R10902:10904 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R10901:10901 cap <> i:216 var
+R10905:10905 cap <> k:219 var
+R10926:10928 Corelib.Init.Datatypes <> ::type_scope:x_'+'_x not
+R10913:10918 cap <> is_ret def
+R10924:10925 cap <> nd:217 var
+R10922:10922 cap <> j:218 var
+R10920:10920 cap <> E:215 var
+R10929:10937 cap <> is_halted ind
+R10941:10941 cap <> j:218 var
+R10939:10939 cap <> E:215 var
+def 11418:11421 <> In_T
+R11429:11432 cap <> Algorithme_Distribue.Node var
+binder 11424:11425 <> nd:220
+R11440:11443 Corelib.Init.Datatypes <> list ind
+R11445:11448 cap <> Algorithme_Distribue.Node var
+binder 11436:11436 <> l:221
+R11471:11471 cap <> l:221 var
+R11484:11486 Corelib.Init.Datatypes <> nil constr
+R11491:11495 Corelib.Init.Logic <> False ind
+R11504:11507 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11516:11516 Corelib.Init.Datatypes <> ::type_scope:x_'+'_x not
+R11523:11527 Corelib.Init.Datatypes <> ::type_scope:x_'+'_x not
+R11540:11540 Corelib.Init.Datatypes <> ::type_scope:x_'+'_x not
+R11519:11521 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11517:11518 cap <> nd:220 var
+R11528:11531 cap <> In_T:222 def
+R11533:11534 cap <> nd:220 var
+def 12187:12203 <> at_most_t_crashes
+R12210:12219 cap <> Algorithme rec
+binder 12206:12206 <> A:224
+R12227:12235 cap <> Execution rec
+R12237:12237 cap <> A:224 var
+binder 12223:12223 <> E:225
+R12245:12247 Corelib.Init.Datatypes <> nat ind
+binder 12241:12241 <> t:226
+R12264:12265 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R12278:12280 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R12290:12292 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R12389:12390 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R12281:12284 Corelib.Init.Datatypes <> list ind
+R12286:12289 cap <> Algorithme_Distribue.Node var
+binder 12266:12277 <> crashed_list:227
+R12294:12294 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R12319:12323 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R12382:12382 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R12314:12317 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R12295:12300 Corelib.Init.Datatypes <> length def
+R12302:12313 cap <> crashed_list:227 var
+R12318:12318 cap <> t:226 var
+binder 12331:12332 <> nd:228
+R12358:12361 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12335:12344 cap <> is_crashed def
+R12356:12357 cap <> nd:228 var
+R12349:12353 cap <> trace proj
+R12346:12346 cap <> E:225 var
+R12362:12365 cap <> In_T def
+R12370:12381 cap <> crashed_list:227 var
+R12367:12368 cap <> nd:228 var
+def 12407:12417 <> t_resilient
+R12424:12433 cap <> Algorithme rec
+binder 12420:12420 <> A:229
+R12441:12449 cap <> Execution rec
+R12451:12451 cap <> A:229 var
+binder 12437:12437 <> E:230
+R12459:12461 Corelib.Init.Datatypes <> nat ind
+binder 12455:12455 <> t:231
+R12499:12506 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12478:12494 cap <> at_most_t_crashes def
+R12498:12498 cap <> t:231 var
+R12496:12496 cap <> E:230 var
+R12519:12521 Corelib.Init.Datatypes <> nat ind
+binder 12515:12515 <> i:232
+R12530:12533 cap <> Algorithme_Distribue.Node var
+binder 12525:12526 <> nd:233
+R12566:12576 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12543:12552 cap <> is_correct def
+R12564:12565 cap <> nd:233 var
+R12557:12561 cap <> trace proj
+R12554:12554 cap <> E:230 var
+R12591:12601 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12577:12583 cap <> is_call def
+R12589:12590 cap <> nd:233 var
+R12587:12587 cap <> i:232 var
+R12585:12585 cap <> E:230 var
+R12602:12603 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R12605:12607 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R12611:12613 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R12666:12667 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R12608:12610 Corelib.Init.Datatypes <> nat ind
+binder 12604:12604 <> j:234
+R12644:12646 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R12615:12616 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R12619:12621 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R12625:12627 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R12642:12643 Corelib.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R12622:12624 Corelib.Init.Datatypes <> nat ind
+binder 12617:12618 <> dt:235
+R12629:12631 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12628:12628 cap <> j:234 var
+R12632:12632 Corelib.Init.Datatypes <> S constr
+R12636:12638 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R12635:12635 cap <> i:232 var
+R12639:12640 cap <> dt:235 var
+R12647:12652 cap <> is_ret def
+R12658:12659 cap <> nd:233 var
+R12656:12656 cap <> j:234 var
+R12654:12654 cap <> E:230 var
+var 12682:12688 Algorithme_Distribue N_total
+R12692:12694 Corelib.Init.Datatypes <> nat ind
+def 12711:12723 <> wait_free_gen
+R12730:12739 cap <> Algorithme rec
+binder 12726:12726 <> A:238
+R12747:12755 cap <> Execution rec
+R12757:12757 cap <> A:238 var
+binder 12743:12743 <> E:239
+R12774:12784 cap <> t_resilient def
+R12796:12798 Corelib.Init.Peano <> ::nat_scope:x_'-'_x not
+R12789:12795 cap <> Algorithme_Distribue.N_total var
+R12786:12786 cap <> E:239 var
+rec 12813:12824 <> Completed_Op
+proj 12877:12883 <> op_node
+proj 12898:12904 <> op_call
+proj 12916:12921 <> op_ret
+proj 12934:12939 <> t_call
+proj 12954:12958 <> t_ret
+proj 12974:12980 <> proof_c
+proj 13038:13044 <> proof_r
+proj 13099:13108 <> proof_time
+R12831:12840 cap <> Algorithme rec
+binder 12827:12827 <> A:240
+R12848:12856 cap <> Execution rec
+R12858:12858 cap <> A:240 var
+binder 12844:12844 <> E:241
+R12887:12890 cap <> Algorithme_Distribue.Node var
+R12908:12908 cap <> Algorithme_Distribue.C var
+R12926:12926 cap <> Algorithme_Distribue.R var
+R12944:12946 Corelib.Init.Datatypes <> nat ind
+R12964:12966 Corelib.Init.Datatypes <> nat ind
+R13000:13002 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12987:12991 cap <> trace proj
+R12984:12984 cap <> E:241 var
+R12994:12999 cap <> t_call:246 meth
+R13003:13006 Corelib.Init.Datatypes <> Some constr
+R13008:13008 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13021:13022 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13030:13030 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13009:13012 cap <> call constr
+R13014:13020 cap <> op_call:244 meth
+R13023:13029 cap <> op_node:243 meth
+R13063:13065 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13051:13055 cap <> trace proj
+R13048:13048 cap <> E:241 var
+R13058:13062 cap <> t_ret:247 meth
+R13066:13069 Corelib.Init.Datatypes <> Some constr
+R13071:13071 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13082:13083 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13091:13091 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13072:13074 cap <> ret constr
+R13076:13081 cap <> op_ret:245 meth
+R13084:13090 cap <> op_node:243 meth
+R13118:13120 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R13112:13117 cap <> t_call:246 meth
+R13121:13125 cap <> t_ret:247 meth
+ind 13194:13203 <> prog_order
+constr 13281:13287 <> PO_refl
+constr 13327:13333 <> PO_step
+R13210:13219 cap <> Algorithme rec
+binder 13206:13206 <> A:251
+R13227:13235 cap <> Execution rec
+R13237:13237 cap <> A:251 var
+binder 13223:13223 <> E:252
+R13251:13262 cap <> Completed_Op rec
+R13264:13264 cap <> E:252 var
+binder 13241:13243 <> op1:253
+binder 13245:13247 <> op2:254
+R13300:13303 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13294:13296 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13291:13293 cap <> op1:253 var
+R13297:13299 cap <> op2:254 var
+R13304:13313 cap <> prog_order:255 ind
+R13319:13321 cap <> op2:254 var
+R13315:13317 cap <> op1:253 var
+R13362:13365 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13348:13350 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13337:13343 cap <> op_node proj
+R13345:13347 cap <> op1:253 var
+R13351:13357 cap <> op_node proj
+R13359:13361 cap <> op2:254 var
+R13389:13392 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13376:13378 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R13366:13371 cap <> t_call proj
+R13373:13375 cap <> op1:253 var
+R13379:13384 cap <> t_call proj
+R13386:13388 cap <> op2:254 var
+R13393:13402 cap <> prog_order:255 ind
+R13408:13410 cap <> op2:254 var
+R13404:13406 cap <> op1:253 var
+scheme 13194:13203 <> prog_order_rect
+scheme 13194:13203 <> prog_order_ind
+scheme 13194:13203 <> prog_order_rec
+scheme 13194:13203 <> prog_order_sind
+def 13439:13453 <> extract_history
+R13460:13469 cap <> Algorithme rec
+binder 13456:13456 <> A:257
+R13477:13485 cap <> Execution rec
+R13487:13487 cap <> A:257 var
+binder 13473:13473 <> E:258
+R13492:13499 cap <> Histoire rec
+R13503:13505 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R13502:13502 cap <> Algorithme_Distribue.C var
+R13506:13506 cap <> Algorithme_Distribue.R var
+R13519:13524 cap <> events proj
+R13519:13524 cap <> events proj
+R13519:13524 cap <> events proj
+R13550:13554 cap <> label proj
+R13550:13554 cap <> label proj
+R13600:13602 cap <> ord proj
+R13600:13602 cap <> ord proj
+R13627:13630 cap <> refl proj
+R13627:13630 cap <> refl proj
+R13668:13672 cap <> trans proj
+R13668:13672 cap <> trans proj
+R13529:13540 cap <> Completed_Op rec
+R13542:13542 cap <> E:258 var
+binder 13564:13565 <> op:259
+R13570:13570 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13581:13582 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13592:13592 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13571:13577 cap <> op_call proj
+R13579:13580 cap <> op:259 var
+R13583:13588 cap <> op_ret proj
+R13590:13591 cap <> op:259 var
+R13610:13619 cap <> prog_order ind
+binder 13641:13641 <> a:260
+R13646:13652 cap <> PO_refl constr
+R13654:13660 Corelib.Init.Logic <> eq_refl constr
+R13840:13846 cap <> PO_refl constr
+R13840:13846 cap <> PO_refl constr
+R13881:13887 cap <> PO_step constr
+R13881:13887 cap <> PO_step constr
+R13921:13927 cap <> PO_step constr
+R13921:13927 cap <> PO_step constr
+R13954:13960 cap <> PO_step constr
+R13954:13960 cap <> PO_step constr
+R14023:14042 cap Algorithme_Distribue <> sec
+sec 14273:14282 <> Preuve_CAP
+var 14297:14300 Preuve_CAP Node
+var 14321:14331 Preuve_CAP eq_node_dec
+R14348:14351 cap <> Preuve_CAP.Node var
+binder 14342:14342 <> x:263
+binder 14344:14344 <> y:264
+R14354:14354 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R14360:14364 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R14371:14371 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R14356:14358 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14355:14355 cap <> x:263 var
+R14359:14359 cap <> y:264 var
+R14366:14369 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14365:14365 cap <> x:263 var
+R14370:14370 cap <> y:264 var
+var 14385:14391 Preuve_CAP Message
+var 14412:14421 Preuve_CAP eq_msg_dec
+R14438:14444 cap <> Preuve_CAP.Message var
+binder 14432:14432 <> x:269
+binder 14434:14434 <> y:270
+R14447:14447 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R14453:14457 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R14464:14464 Corelib.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R14449:14451 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14448:14448 cap <> x:269 var
+R14452:14452 cap <> y:270 var
+R14459:14462 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14458:14458 cap <> x:269 var
+R14463:14463 cap <> y:270 var
+def 14481:14484 <> Addr
+R14489:14491 Corelib.Init.Datatypes <> nat ind
+var 14505:14505 Preuve_CAP x
+var 14507:14507 Preuve_CAP y
+R14511:14514 cap <> Addr def
+var 14530:14536 Preuve_CAP x_neq_y
+R14541:14544 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14540:14540 cap <> Preuve_CAP.x var
+R14545:14545 cap <> Preuve_CAP.y var
+def 14562:14562 <> C
+R14567:14577 cap <> Command_mem ind
+R14579:14582 cap <> Addr def
+def 14598:14598 <> R
+R14603:14619 cap <> Response_type_mem ind
+R14621:14624 cap <> Addr def
+var 14638:14638 Preuve_CAP Q
+var 14660:14663 Preuve_CAP Algo
+R14667:14676 cap <> Algorithme rec
+R14695:14695 cap <> Preuve_CAP.Q var
+R14693:14693 cap <> R def
+R14691:14691 cap <> C def
+R14683:14689 cap <> Preuve_CAP.Message var
+R14678:14681 cap <> Preuve_CAP.Node var
+def 14712:14714 <> Cfg
+R14720:14725 cap <> Config rec
+R14740:14740 cap <> Preuve_CAP.Q var
+R14732:14738 cap <> Preuve_CAP.Message var
+R14727:14730 cap <> Preuve_CAP.Node var
+def 14756:14760 <> Trans
+R14765:14774 cap <> Transition ind
+R14791:14791 cap <> R def
+R14789:14789 cap <> C def
+R14781:14787 cap <> Preuve_CAP.Message var
+R14776:14779 cap <> Preuve_CAP.Node var
+var 14807:14812 Preuve_CAP v_init
+var 14814:14820 Preuve_CAP v_write
+R14824:14826 Corelib.Init.Datatypes <> nat ind
+var 14842:14847 Preuve_CAP v_diff
+R14857:14860 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14851:14856 cap <> Preuve_CAP.v_init var
+R14861:14867 cap <> Preuve_CAP.v_write var
+var 14883:14899 Preuve_CAP mx_init_is_v_init
+R14909:14911 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14903:14908 cap <> Preuve_CAP.v_init var
+def 14929:14931 <> w_x
+R14935:14935 cap <> C def
+R14940:14944 cap <> write constr
+R14948:14954 cap <> Preuve_CAP.v_write var
+R14946:14946 cap <> Preuve_CAP.x var
+def 14970:14972 <> r_y
+R14976:14976 cap <> C def
+R14981:14984 cap <> read constr
+R14986:14986 cap <> Preuve_CAP.y var
+def 15002:15004 <> w_y
+R15008:15008 cap <> C def
+R15013:15017 cap <> write constr
+R15021:15027 cap <> Preuve_CAP.v_write var
+R15019:15019 cap <> Preuve_CAP.y var
+def 15043:15045 <> r_x
+R15049:15049 cap <> C def
+R15054:15057 cap <> read constr
+R15059:15059 cap <> Preuve_CAP.x var
+var 15074:15078 Preuve_CAP in_P1
+R15086:15089 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15082:15085 cap <> Preuve_CAP.Node var
+R15090:15093 Corelib.Init.Datatypes <> bool ind
+var 15108:15114 Preuve_CAP P1_list
+R15118:15121 Corelib.Init.Datatypes <> list ind
+R15123:15126 cap <> Preuve_CAP.Node var
+var 15143:15150 Preuve_CAP p_client
+R15154:15157 cap <> Preuve_CAP.Node var
+var 15174:15198 Preuve_CAP safety_no_spontaneous_ret
+binder 15209:15209 <> n:297
+binder 15211:15211 <> q:298
+binder 15213:15213 <> r:299
+binder 15215:15216 <> q':300
+R15236:15243 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15224:15227 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R15223:15223 cap <> n:297 var
+R15228:15235 cap <> Preuve_CAP.p_client var
+R15315:15323 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15263:15265 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R15250:15259 cap <> local_step proj
+R15244:15247 cap <> Preuve_CAP.Algo var
+R15262:15262 cap <> q:298 var
+R15266:15271 Corelib.Init.Specif <> existT constr
+R15313:15314 cap <> q':300 var
+R15287:15295 cap <> LS_Return constr
+R15310:15310 cap <> r:299 var
+R15302:15308 cap <> Preuve_CAP.Message var
+R15297:15300 cap <> Preuve_CAP.Node var
+R15283:15283 cap <> Preuve_CAP.Q var
+R15324:15328 Corelib.Init.Logic <> False ind
+var 15343:15344 Preuve_CAP n1
+var 15346:15347 Preuve_CAP n2
+R15351:15354 cap <> Preuve_CAP.Node var
+var 15370:15378 Preuve_CAP n1_neq_n2
+R15384:15387 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R15382:15383 cap <> Preuve_CAP.n1 var
+R15388:15389 cap <> Preuve_CAP.n2 var
+def 15481:15492 <> rotate_queue
+R15499:15502 Corelib.Init.Datatypes <> list ind
+R15504:15507 cap <> Preuve_CAP.Node var
+binder 15495:15495 <> q:309
+R15512:15515 Corelib.Init.Datatypes <> list ind
+R15517:15520 cap <> Preuve_CAP.Node var
+R15535:15535 cap <> q:309 var
+R15548:15550 Corelib.Init.Datatypes <> nil constr
+R15555:15557 Corelib.Init.Datatypes <> nil constr
+R15566:15569 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R15582:15586 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R15595:15595 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R15588:15591 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R15592:15594 Corelib.Init.Datatypes <> nil constr
+ind 15621:15631 <> ClientState
+constr 15640:15645 <> C_Init
+constr 15710:15725 <> C_Wait_Write_Ret
+constr 15792:15807 <> C_Ready_For_Read
+constr 15879:15893 <> C_Wait_Read_Ret
+constr 15943:15948 <> C_Done
+scheme 15621:15631 <> ClientState_rect
+scheme 15621:15631 <> ClientState_ind
+scheme 15621:15631 <> ClientState_rec
+scheme 15621:15631 <> ClientState_sind
+def 15963:15973 <> find_msg_P1
+R15982:15985 Corelib.Init.Datatypes <> list ind
+R16002:16004 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R15995:15997 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R15988:15994 cap <> Preuve_CAP.Message var
+R15998:16001 cap <> Preuve_CAP.Node var
+R16005:16008 cap <> Preuve_CAP.Node var
+binder 15976:15978 <> net:313
+R16025:16028 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16021:16024 cap <> Preuve_CAP.Node var
+R16029:16032 Corelib.Init.Datatypes <> bool ind
+binder 16013:16017 <> in_P1:314
+R16037:16042 Corelib.Init.Datatypes <> option ind
+R16059:16061 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R16052:16054 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R16045:16051 cap <> Preuve_CAP.Message var
+R16055:16058 cap <> Preuve_CAP.Node var
+R16062:16065 cap <> Preuve_CAP.Node var
+R16081:16083 cap <> net:313 var
+R16096:16098 Corelib.Init.Datatypes <> nil constr
+R16103:16106 Corelib.Init.Datatypes <> None constr
+R16127:16130 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R16114:16114 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16116:16117 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16121:16122 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16126:16126 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16159:16162 Corelib.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R16150:16154 cap <> in_P1:314 var
+R16163:16167 cap <> in_P1:314 var
+R16232:16242 cap <> find_msg_P1:315 def
+R16249:16253 cap <> in_P1:314 var
+R16189:16192 Corelib.Init.Datatypes <> Some constr
+R16194:16194 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16196:16197 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16201:16202 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16206:16206 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16280:16283 cap <> call constr
+R16280:16283 cap <> call constr
+R16310:16312 cap <> ret constr
+R16310:16312 cap <> ret constr
+R16339:16342 cap <> send constr
+R16339:16342 cap <> send constr
+R16371:16377 cap <> receive constr
+R16371:16377 cap <> receive constr
+R16406:16413 cap <> internal constr
+R16406:16413 cap <> internal constr
+R16438:16445 cap <> to_Trans def
+R16438:16445 cap <> to_Trans def
+def 16476:16489 <> next_action_T1
+R16498:16500 cap <> Cfg def
+binder 16492:16494 <> cfg:317
+R16514:16524 cap <> ClientState ind
+binder 16504:16510 <> c_state:318
+R16536:16539 Corelib.Init.Datatypes <> list ind
+R16541:16544 cap <> Preuve_CAP.Node var
+binder 16528:16532 <> queue:319
+R16555:16557 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R16550:16554 cap <> Trans def
+R16558:16561 cap <> Preuve_CAP.Node var
+R16577:16583 cap <> c_state:318 var
+R16596:16601 cap <> C_Init constr
+R16606:16606 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16615:16616 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16625:16625 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16607:16610 cap <> call constr
+R16612:16614 cap <> w_x def
+R16617:16624 cap <> Preuve_CAP.p_client var
+R16633:16648 cap <> C_Ready_For_Read constr
+R16653:16653 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16662:16663 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16672:16672 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16654:16657 cap <> call constr
+R16659:16661 cap <> r_y def
+R16664:16671 cap <> Preuve_CAP.p_client var
+R16700:16710 cap <> find_msg_P1 def
+R16726:16730 cap <> Preuve_CAP.in_P1 var
+R16717:16723 cap <> network proj
+R16712:16714 cap <> cfg:317 var
+R16747:16750 Corelib.Init.Datatypes <> Some constr
+R16752:16752 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16754:16755 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16759:16760 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16764:16764 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16769:16769 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16783:16784 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16788:16788 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16770:16776 cap <> receive constr
+R16800:16803 Corelib.Init.Datatypes <> None constr
+R16827:16831 cap <> queue:319 var
+R16852:16854 Corelib.Init.Datatypes <> nil constr
+R16906:16915 cap <> local_step proj
+R16900:16903 cap <> Preuve_CAP.Algo var
+R16924:16929 cap <> states proj
+R16919:16921 cap <> cfg:317 var
+R16932:16939 cap <> Preuve_CAP.p_client var
+R16882:16887 Corelib.Init.Specif <> existT constr
+R16961:16961 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16973:16974 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16983:16983 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16962:16969 cap <> to_Trans def
+R16975:16982 cap <> Preuve_CAP.p_client var
+R17000:17003 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R17056:17065 cap <> local_step proj
+R17050:17053 cap <> Preuve_CAP.Algo var
+R17074:17079 cap <> states proj
+R17069:17071 cap <> cfg:317 var
+R17032:17037 Corelib.Init.Specif <> existT constr
+R17104:17104 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R17116:17117 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R17119:17119 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R17105:17112 cap <> to_Trans def
+def 17172:17181 <> get_next_q
+R17188:17188 cap <> Preuve_CAP.Q var
+binder 17184:17184 <> q:322
+R17196:17200 cap <> Trans def
+binder 17192:17192 <> t:323
+R17205:17205 cap <> Preuve_CAP.Q var
+R17231:17245 cap <> is_local_action def
+R17231:17245 cap <> is_local_action def
+R17343:17352 cap <> local_step proj
+R17337:17340 cap <> Preuve_CAP.Algo var
+R17343:17352 cap <> local_step proj
+R17337:17340 cap <> Preuve_CAP.Algo var
+R17491:17500 cap <> input_step proj
+R17485:17488 cap <> Preuve_CAP.Algo var
+R17491:17500 cap <> input_step proj
+R17485:17488 cap <> Preuve_CAP.Algo var
+def 17565:17576 <> apply_action
+R17585:17587 cap <> Cfg def
+binder 17579:17581 <> cfg:324
+R17602:17604 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R17597:17601 cap <> Trans def
+R17605:17608 cap <> Preuve_CAP.Node var
+binder 17591:17593 <> act:325
+R17613:17615 cap <> Cfg def
+R17638:17640 cap <> act:325 var
+binder 17629:17629 <> t:326
+binder 17632:17632 <> n:327
+R17662:17671 cap <> get_next_q def
+R17690:17690 cap <> t:326 var
+R17679:17684 cap <> states proj
+R17674:17676 cap <> cfg:324 var
+R17687:17687 cap <> n:327 var
+binder 17653:17657 <> new_q:328
+binder 17727:17727 <> x:329
+R17735:17745 cap <> Preuve_CAP.eq_node_dec var
+R17749:17749 cap <> n:327 var
+R17747:17747 cap <> x:329 var
+R17772:17777 cap <> states proj
+R17767:17769 cap <> cfg:324 var
+R17780:17780 cap <> x:329 var
+R17756:17760 cap <> new_q:328 var
+binder 17708:17718 <> next_states:330
+R17800:17800 cap <> t:326 var
+R17813:17816 cap <> call constr
+R17835:17840 cap <> states proj
+R17835:17840 cap <> states proj
+R17835:17840 cap <> states proj
+R17868:17874 cap <> network proj
+R17868:17874 cap <> network proj
+R17904:17915 cap <> pending_call proj
+R17904:17915 cap <> pending_call proj
+R17845:17855 cap <> next_states:330 var
+R17884:17890 cap <> network proj
+R17879:17881 cap <> cfg:324 var
+binder 17924:17924 <> x:332
+R17932:17942 cap <> Preuve_CAP.eq_node_dec var
+R17946:17946 cap <> n:327 var
+R17944:17944 cap <> x:332 var
+R17968:17979 cap <> pending_call proj
+R17963:17965 cap <> cfg:324 var
+R17982:17982 cap <> x:332 var
+R17953:17956 Corelib.Init.Datatypes <> true constr
+R18002:18004 cap <> ret constr
+R18023:18028 cap <> states proj
+R18023:18028 cap <> states proj
+R18023:18028 cap <> states proj
+R18056:18062 cap <> network proj
+R18056:18062 cap <> network proj
+R18092:18103 cap <> pending_call proj
+R18092:18103 cap <> pending_call proj
+R18033:18043 cap <> next_states:330 var
+R18072:18078 cap <> network proj
+R18067:18069 cap <> cfg:324 var
+binder 18112:18112 <> x:333
+R18120:18130 cap <> Preuve_CAP.eq_node_dec var
+R18134:18134 cap <> n:327 var
+R18132:18132 cap <> x:333 var
+R18157:18168 cap <> pending_call proj
+R18152:18154 cap <> cfg:324 var
+R18171:18171 cap <> x:333 var
+R18141:18145 Corelib.Init.Datatypes <> false constr
+R18191:18194 cap <> send constr
+R18218:18223 cap <> states proj
+R18218:18223 cap <> states proj
+R18218:18223 cap <> states proj
+R18251:18257 cap <> network proj
+R18251:18257 cap <> network proj
+R18303:18314 cap <> pending_call proj
+R18303:18314 cap <> pending_call proj
+R18228:18238 cap <> next_states:330 var
+R18274:18277 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R18262:18262 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18264:18265 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18267:18268 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18273:18273 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18266:18266 cap <> n:327 var
+R18283:18289 cap <> network proj
+R18278:18280 cap <> cfg:324 var
+R18324:18335 cap <> pending_call proj
+R18319:18321 cap <> cfg:324 var
+R18356:18362 cap <> receive constr
+R18385:18390 cap <> states proj
+R18385:18390 cap <> states proj
+R18385:18390 cap <> states proj
+R18418:18424 cap <> network proj
+R18418:18424 cap <> network proj
+R18943:18954 cap <> pending_call proj
+R18943:18954 cap <> pending_call proj
+R18395:18405 cap <> next_states:330 var
+R18457:18460 Corelib.Init.Datatypes <> list ind
+R18477:18479 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R18470:18472 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R18463:18469 cap <> Preuve_CAP.Message var
+R18473:18476 cap <> Preuve_CAP.Node var
+R18480:18483 cap <> Preuve_CAP.Node var
+binder 18453:18453 <> l:334
+R18489:18492 Corelib.Init.Datatypes <> list ind
+R18509:18511 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R18502:18504 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R18495:18501 cap <> Preuve_CAP.Message var
+R18505:18508 cap <> Preuve_CAP.Node var
+R18512:18515 cap <> Preuve_CAP.Node var
+R18539:18539 cap <> l:334 var
+R18560:18562 Corelib.Init.Datatypes <> nil constr
+R18567:18569 Corelib.Init.Datatypes <> nil constr
+R18597:18600 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R18585:18585 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18588:18589 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18592:18593 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18596:18596 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18628:18637 cap <> Preuve_CAP.eq_msg_dec var
+R18873:18876 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R18861:18861 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18864:18865 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18868:18869 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18872:18872 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18877:18878 cap <> rm:335 var
+R18670:18680 cap <> Preuve_CAP.eq_node_dec var
+R18828:18831 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R18816:18816 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18819:18820 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18823:18824 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18827:18827 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18832:18833 cap <> rm:335 var
+R18717:18727 cap <> Preuve_CAP.eq_node_dec var
+R18732:18732 cap <> n:327 var
+R18781:18784 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R18769:18769 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18772:18773 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18776:18777 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18780:18780 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18785:18786 cap <> rm:335 var
+binder 18449:18450 <> rm:337
+R18914:18915 cap <> rm:337 var
+R18922:18928 cap <> network proj
+R18917:18919 cap <> cfg:324 var
+R18964:18975 cap <> pending_call proj
+R18959:18961 cap <> cfg:324 var
+R18996:19003 cap <> internal constr
+R19020:19025 cap <> states proj
+R19020:19025 cap <> states proj
+R19020:19025 cap <> states proj
+R19053:19059 cap <> network proj
+R19053:19059 cap <> network proj
+R19089:19100 cap <> pending_call proj
+R19089:19100 cap <> pending_call proj
+R19030:19040 cap <> next_states:330 var
+R19069:19075 cap <> network proj
+R19064:19066 cap <> cfg:324 var
+R19110:19121 cap <> pending_call proj
+R19105:19107 cap <> cfg:324 var
+def 19152:19168 <> next_client_state
+R19181:19191 cap <> ClientState ind
+binder 19171:19177 <> c_state:338
+R19206:19208 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R19201:19205 cap <> Trans def
+R19209:19212 cap <> Preuve_CAP.Node var
+binder 19195:19197 <> act:339
+R19217:19227 cap <> ClientState ind
+R19250:19252 cap <> act:339 var
+binder 19241:19241 <> t:340
+binder 19244:19244 <> n:341
+R19276:19276 cap <> t:340 var
+R19267:19273 cap <> c_state:338 var
+R19289:19294 cap <> C_Init constr
+R19297:19300 cap <> call constr
+R19307:19322 cap <> C_Wait_Write_Ret constr
+R19335:19350 cap <> C_Wait_Write_Ret constr
+R19353:19355 cap <> ret constr
+R19374:19384 cap <> Preuve_CAP.eq_node_dec var
+R19388:19395 cap <> Preuve_CAP.p_client var
+R19386:19386 cap <> n:341 var
+R19424:19439 cap <> C_Wait_Write_Ret constr
+R19402:19417 cap <> C_Ready_For_Read constr
+R19456:19471 cap <> C_Ready_For_Read constr
+R19474:19477 cap <> call constr
+R19484:19498 cap <> C_Wait_Read_Ret constr
+R19511:19525 cap <> C_Wait_Read_Ret constr
+R19528:19530 cap <> ret constr
+R19549:19559 cap <> Preuve_CAP.eq_node_dec var
+R19563:19570 cap <> Preuve_CAP.p_client var
+R19561:19561 cap <> n:341 var
+R19589:19603 cap <> C_Wait_Read_Ret constr
+R19577:19582 cap <> C_Done constr
+R19628:19634 cap <> c_state:338 var
+def 19659:19674 <> compute_T1_state
+R19681:19683 Corelib.Init.Datatypes <> nat ind
+binder 19677:19677 <> i:344
+R19706:19708 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R19692:19694 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R19689:19691 cap <> Cfg def
+R19695:19705 cap <> ClientState ind
+R19709:19712 Corelib.Init.Datatypes <> list ind
+R19714:19717 cap <> Preuve_CAP.Node var
+R19733:19733 cap <> i:344 var
+R19760:19760 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19781:19782 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19789:19790 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19798:19798 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19761:19775 cap <> config_initiale def
+R19777:19780 cap <> Preuve_CAP.Algo var
+R19783:19788 cap <> C_Init constr
+R19791:19797 cap <> Preuve_CAP.P1_list var
+R19806:19806 Corelib.Init.Datatypes <> S constr
+R19852:19867 cap <> compute_T1_state:345 def
+R19827:19827 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19831:19832 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19840:19841 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19847:19847 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19893:19906 cap <> next_action_T1 def
+binder 19886:19888 <> act:347
+R19962:19973 cap <> apply_action def
+R19979:19981 cap <> act:347 var
+binder 19950:19957 <> next_cfg:348
+R20008:20024 cap <> next_client_state def
+R20034:20036 cap <> act:347 var
+binder 19998:20003 <> next_c:349
+R20072:20074 cap <> act:347 var
+binder 20063:20063 <> t:350
+R20104:20118 cap <> is_local_action def
+R20120:20120 cap <> t:350 var
+R20127:20138 cap <> rotate_queue def
+binder 20091:20096 <> next_q:351
+R20177:20177 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20186:20187 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20194:20195 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20202:20202 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20178:20185 cap <> next_cfg:348 var
+R20188:20193 cap <> next_c:349 var
+R20196:20201 cap <> next_q:351 var
+def 20229:20236 <> T1_trace
+R20243:20245 Corelib.Init.Datatypes <> nat ind
+binder 20239:20239 <> i:352
+R20250:20255 Corelib.Init.Datatypes <> option ind
+R20263:20265 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R20258:20262 cap <> Trans def
+R20266:20269 cap <> Preuve_CAP.Node var
+R20311:20326 cap <> compute_T1_state def
+R20328:20328 cap <> i:352 var
+R20286:20286 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20290:20291 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20299:20300 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20306:20306 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20339:20342 Corelib.Init.Datatypes <> Some constr
+R20345:20358 cap <> next_action_T1 def
+def 20405:20414 <> T1_configs
+R20421:20423 Corelib.Init.Datatypes <> nat ind
+binder 20417:20417 <> i:353
+R20428:20430 cap <> Cfg def
+R20461:20476 cap <> compute_T1_state def
+R20478:20478 cap <> i:353 var
+R20446:20446 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20450:20451 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20453:20454 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20456:20456 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+prf 20499:20505 <> T1_init
+R20521:20523 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R20509:20518 cap <> T1_configs def
+R20524:20538 cap <> config_initiale def
+R20540:20543 cap <> Preuve_CAP.Algo var
+prf 20588:20597 <> T1_halting
+R20612:20614 Corelib.Init.Datatypes <> nat ind
+binder 20608:20608 <> n:354
+R20634:20637 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20627:20629 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R20617:20624 cap <> T1_trace def
+R20626:20626 cap <> n:354 var
+R20630:20633 Corelib.Init.Datatypes <> None constr
+R20652:20654 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R20638:20645 cap <> T1_trace def
+R20648:20648 Corelib.Init.Datatypes <> S constr
+R20650:20650 cap <> n:354 var
+R20655:20658 Corelib.Init.Datatypes <> None constr
+R20774:20781 cap <> T1_trace def
+R20803:20818 cap <> compute_T1_state def
+R20803:20818 cap <> compute_T1_state def
+prf 20885:20901 <> find_msg_P1_sound
+binder 20912:20914 <> net:355
+binder 20916:20920 <> in_P1:356
+binder 20922:20922 <> m:357
+binder 20924:20926 <> src:358
+binder 20928:20930 <> dst:359
+R20979:20986 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20958:20960 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R20937:20947 cap <> find_msg_P1 def
+R20953:20957 cap <> in_P1:356 var
+R20949:20951 cap <> net:355 var
+R20961:20964 Corelib.Init.Datatypes <> Some constr
+R20966:20966 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20968:20969 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20973:20974 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20978:20978 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20967:20967 cap <> m:357 var
+R20970:20972 cap <> src:358 var
+R20975:20977 cap <> dst:359 var
+R21050:21052 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R20988:20999 cap <> contains_msg def
+R21001:21004 cap <> Preuve_CAP.Node var
+R21006:21016 cap <> Preuve_CAP.eq_node_dec var
+R21018:21024 cap <> Preuve_CAP.Message var
+R21026:21035 cap <> Preuve_CAP.eq_msg_dec var
+R21037:21039 cap <> net:355 var
+R21041:21041 cap <> m:357 var
+R21043:21045 cap <> src:358 var
+R21047:21049 cap <> dst:359 var
+R21053:21056 Corelib.Init.Datatypes <> true constr
+R21208:21211 Corelib.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R21208:21211 Corelib.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R21316:21325 cap <> Preuve_CAP.eq_msg_dec var
+R21316:21325 cap <> Preuve_CAP.eq_msg_dec var
+R21405:21415 cap <> Preuve_CAP.eq_node_dec var
+R21405:21415 cap <> Preuve_CAP.eq_node_dec var
+R21499:21509 cap <> Preuve_CAP.eq_node_dec var
+R21499:21509 cap <> Preuve_CAP.eq_node_dec var
+R21629:21638 cap <> Preuve_CAP.eq_msg_dec var
+R21629:21638 cap <> Preuve_CAP.eq_msg_dec var
+R21691:21701 cap <> Preuve_CAP.eq_node_dec var
+R21691:21701 cap <> Preuve_CAP.eq_node_dec var
+R21761:21771 cap <> Preuve_CAP.eq_node_dec var
+R21761:21771 cap <> Preuve_CAP.eq_node_dec var
+prf 21976:21990 <> T1_configs_S_eq
+binder 22001:22001 <> n:360
+R22024:22030 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R22008:22017 cap <> T1_configs def
+R22020:22020 Corelib.Init.Datatypes <> S constr
+R22022:22022 cap <> n:360 var
+R22063:22078 cap <> compute_T1_state def
+R22080:22080 cap <> n:360 var
+R22036:22036 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22051:22052 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22058:22058 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22037:22037 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22041:22042 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22050:22050 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22089:22100 cap <> apply_action def
+R22107:22120 cap <> next_action_T1 def
+R22172:22181 cap <> T1_configs def
+R22205:22220 cap <> compute_T1_state def
+R22205:22220 cap <> compute_T1_state def
+R22275:22288 cap <> next_action_T1 def
+R22275:22288 cap <> next_action_T1 def
+prf 22362:22376 <> T1_trace_action
+binder 22387:22387 <> n:361
+R22404:22406 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R22394:22401 cap <> T1_trace def
+R22403:22403 cap <> n:361 var
+R22407:22410 Corelib.Init.Datatypes <> Some constr
+R22445:22460 cap <> compute_T1_state def
+R22462:22462 cap <> n:361 var
+R22418:22418 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22433:22434 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22440:22440 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22419:22419 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22423:22424 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22432:22432 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22490:22503 cap <> next_action_T1 def
+R22555:22562 cap <> T1_trace def
+R22579:22594 cap <> compute_T1_state def
+R22579:22594 cap <> compute_T1_state def
+prf 22668:22688 <> next_action_T1_C_Init
+binder 22690:22692 <> cfg:362
+binder 22694:22698 <> queue:363
+R22737:22739 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R22706:22719 cap <> next_action_T1 def
+R22732:22736 cap <> queue:363 var
+R22725:22730 cap <> C_Init constr
+R22721:22723 cap <> cfg:362 var
+R22740:22740 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22749:22750 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22759:22759 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22741:22744 cap <> call constr
+R22746:22748 cap <> w_x def
+R22751:22758 cap <> Preuve_CAP.p_client var
+prf 22798:22828 <> next_action_T1_C_Ready_For_Read
+binder 22830:22832 <> cfg:364
+binder 22834:22838 <> queue:365
+R22887:22889 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R22846:22859 cap <> next_action_T1 def
+R22882:22886 cap <> queue:365 var
+R22865:22880 cap <> C_Ready_For_Read constr
+R22861:22863 cap <> cfg:364 var
+R22890:22890 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22899:22900 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22909:22909 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22891:22894 cap <> call constr
+R22896:22898 cap <> r_y def
+R22901:22908 cap <> Preuve_CAP.p_client var
+prf 22948:22977 <> pending_call_invariant_aux_alt
+binder 22988:22988 <> n:366
+binder 22990:22992 <> cfg:367
+binder 22994:23000 <> c_state:368
+binder 23002:23006 <> queue:369
+R23057:23064 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R23031:23033 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R23013:23028 cap <> compute_T1_state def
+R23030:23030 cap <> n:366 var
+R23034:23034 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23049:23050 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23056:23056 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23035:23035 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23039:23040 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23048:23048 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23036:23038 cap <> cfg:367 var
+R23041:23047 cap <> c_state:368 var
+R23051:23055 cap <> queue:369 var
+R23071:23077 cap <> c_state:368 var
+R23090:23095 cap <> C_Init constr
+R23135:23137 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R23113:23124 cap <> pending_call proj
+R23108:23110 cap <> cfg:367 var
+R23127:23134 cap <> Preuve_CAP.p_client var
+R23138:23142 Corelib.Init.Datatypes <> false constr
+R23150:23165 cap <> C_Wait_Write_Ret constr
+R23197:23199 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R23175:23186 cap <> pending_call proj
+R23170:23172 cap <> cfg:367 var
+R23189:23196 cap <> Preuve_CAP.p_client var
+R23200:23203 Corelib.Init.Datatypes <> true constr
+R23211:23226 cap <> C_Ready_For_Read constr
+R23258:23260 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R23236:23247 cap <> pending_call proj
+R23231:23233 cap <> cfg:367 var
+R23250:23257 cap <> Preuve_CAP.p_client var
+R23261:23265 Corelib.Init.Datatypes <> false constr
+R23273:23287 cap <> C_Wait_Read_Ret constr
+R23320:23322 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R23298:23309 cap <> pending_call proj
+R23293:23295 cap <> cfg:367 var
+R23312:23319 cap <> Preuve_CAP.p_client var
+R23323:23326 Corelib.Init.Datatypes <> true constr
+R23334:23339 cap <> C_Done constr
+R23380:23382 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R23358:23369 cap <> pending_call proj
+R23353:23355 cap <> cfg:367 var
+R23372:23379 cap <> Preuve_CAP.p_client var
+R23383:23387 Corelib.Init.Datatypes <> false constr
+R23527:23541 cap <> config_initiale def
+R23600:23615 cap <> compute_T1_state def
+R23600:23615 cap <> compute_T1_state def
